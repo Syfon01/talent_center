@@ -224,27 +224,6 @@ h1, h2, h3, h4, h5, h6{
   padding-top: 6.25rem;
   padding-left: 6.25rem;
 }
-@media (max-width: 576px) {
-  .sidebar-fix {
-    position: relative!important;
-    z-index: 1;
-    padding-top: 0.25rem!important;
-
-  }
-  .media-body {
-    margin-left: 0!important;
-  }
-   .navbar-header-fixed {
-     position: fixed;
-     top: 0;
-     left: 0;
-     right: 0;
-     z-index: 1000;
-}
-.body-bg{
-  margin-top: 50px;
-}
-}
 @media (max-width: 768px) {
   .sidebar-fix {
     width: 16.25rem;
@@ -305,4 +284,34 @@ h1, h2, h3, h4, h5, h6{
 .btn-light{
   background: #F9F9F9 !important;
   color:#777777
+}
+@media (max-width: 576px) {
+  .sidebar-fix {
+    position: relative !important;
+    z-index: 1;
+    padding-top: 0.25rem !important;
+
+  }
+
+  .media-body {
+    margin-left: 0 !important;
+  }
+
+  .navbar-header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  .body-bg {
+    margin-top: 50px;
+  }
+  .mobile-search{
+    padding-left: 10px;
+  }
+  .mobile-form{
+    width:95%!important
+  }
 }
