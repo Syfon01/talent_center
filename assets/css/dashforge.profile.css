@@ -290,6 +290,8 @@ h1, h2, h3, h4, h5, h6{
     position: relative !important;
     z-index: 1;
     padding-top: 0.25rem !important;
+    padding-left: 0.5rem;
+    width: 100%;
 
   }
 
