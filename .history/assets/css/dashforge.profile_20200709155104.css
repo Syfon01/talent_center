@@ -226,13 +226,12 @@ h1, h2, h3, h4, h5, h6{
 }
 @media (max-width: 576px) {
   .sidebar-fix {
-    position: relative!important;
-    z-index: 1;
-    padding-top: 0.25rem!important;
-
+    width: 16.25rem;
+    position: relative;
+    z-index: 1
   }
   .media-body {
-    margin-left: 0!important;
+    margin-left: 0!imporatant;
   }
 }
 
