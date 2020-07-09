@@ -290,3 +290,10 @@ h1, h2, h3, h4, h5, h6{
 .body-bg{
   background: #F9F9F9;
 }
+.tx-gray-500{
+  color: #777777!important;
+}
+.btn-light{
+  background: #F9F9F9 !important;
+  color:#777777
+}
