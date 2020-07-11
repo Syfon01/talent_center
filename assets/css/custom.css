@@ -71,12 +71,12 @@ h6 {
 }
 
 .media-body {
-  /* margin-left: 16.25rem; */
+  margin-left: 16.25rem;
 }
 
 .btn-green {
   background-color: #108043;
-  color: #fff;
+  color: #fff!important;
 }
 
 .bg-green {
@@ -136,6 +136,7 @@ h6 {
 }
 .bg-talenticon{
   background: #801010;
+  margin-top: -50px;
 }
 
 .evaluated{
@@ -149,4 +150,41 @@ h6 {
   background-color: #FBF5E4;
   color: #773C20;
   border-radius:50px;
+}
+.btn-view{
+  border: 2px solid #C5D9E8;
+  color: #358ED7;
+}
+.status-pad{
+  padding-top:1.2rem!important
+}
+.add-more{
+  border: 1px dashed #1F75BC;
+  background-color: #E7F1F9;
+  color: #358ED7!important;
+  font-weight: 500;
+  text-align: left!important;
+}
+.btn-danger{
+  color: #fff!important;
+}
+@media (min-width: 1600px) {
+  .sidebar-fix{
+    width:22rem ;
+    margin-left: 11rem;
+  }
+}
+
+@media (min-width: 1500px) {
+  .sidebar-fix {
+    width: 22rem;
+    margin-left: 5rem;
+  }
+}
+
+@media (min-width: 1950px) {
+  .sidebar-fix {
+    width: 22rem;
+    margin-left: 19rem;
+  }
 }

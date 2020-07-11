@@ -53,7 +53,7 @@
     <div class="content content-fixed content-profile talkcenter-bg">
       <div class="container pd-x-0 pd-lg-x-10 pd-xl-x-0">
         <div class="media d-block d-lg-flex">
-          <div class="profile-sidebar pd-lg-r-25">
+          <div class="profile-sidebar pd-lg-r-25 sidebar-fix">
             <div class="row">
               <div class="col-lg-4 col-xl-4 col-md-4 col-4">
                 <div class="avatar avatar-xl"><img src="./assets/img/profile.png" class="rounded-circle img-fluid" alt="">
@@ -153,7 +153,9 @@
 
                       <input type="text" class="form-control mg-y-10" placeholder="A just-in-time to UK office for 3 months">
                       <input type="text" class="form-control mg-y-10" placeholder="Executive monitoring">
-                      <button class="btn"> Add more entry</button>
+                      <a class="btn form-control add-more">
+                        <i data-feather="plus"></i> Add more entry
+                      </a>
                       <button type="submit" class="btn btn-primary float-right mg-t-60">Submit</button>
                     </form>
                   </div>
@@ -176,23 +178,23 @@
                         <tr>
                           <td>1</td>
                           <td><img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid"> Sam Davids</td>
-                          <td><span class="evaluated pd-x-20 pd-y-5">Evaluated</span></td>
+                          <td class="status-pad"><span class="evaluated pd-x-20 pd-y-5">Evaluated</span></td>
                           <td>30 Dec, 2021</td>
-                          <td>30 Dec, 2021</td>
+                          <td><a class="btn btn-view pd-x-40" href="">View</a></td>
                         </tr>
                         <tr>
                           <td>2</td>
                           <td><img src="./assets/img/pro-2.png" alt="profile-image" srcset="" class="img-fluid"> Sam Davids</td>
-                          <td><span class="not-evaluated pd-x-20 pd-y-5">Not evaluted</span></td>
+                          <td class="status-pad"><span class="not-evaluated pd-x-20 pd-y-5">Not evaluted</span></td>
                           <td>30 Dec, 2021</td>
-                          <td>30 Dec, 2021</td>
+                          <td><a class="btn btn-view pd-x-40" href="">View</a></td>
                         </tr>
                         <tr>
                           <td>3</td>
                           <td><img src="./assets/img/pro-3.png" alt="profile-image" srcset="" class="img-fluid"> Sam Davids</td>
-                          <td><span class="evaluated pd-x-20 pd-y-5">Evaluated </span></td>
+                          <td class="status-pad"><span class="evaluated pd-x-20 pd-y-5">Evaluated </span></td>
                           <td>30 Dec, 2021</td>
-                          <td>30 Dec, 2021</td>
+                          <td><a class="btn btn-view pd-x-40" href="">View</a></td>
                         </tr>
                       </tbody>
                     </table>
@@ -260,7 +262,7 @@
                     </div>
                     <div class="col-xl-7 col-lg-7 col-md-7 col-6 bg-gray-100">
                         <div class="row">
-                          <div class="col bg-green pd-y-10">
+                          <div class="col pd-y-10">
                             <p class="tx-white tx-16 mg-b-0">Ready</p>
                           </div>
                           <div class="col pd-y-10">
@@ -334,21 +336,21 @@
                     <div class="col-xl-4 col-lg-4 col-md-4 col-12 pd-y-5">
                       <p class="mg-b-0">In Succession Pool?</p>
                       <div class="">
-                      <button type="submit" class="btn btn-green tx-semibold">Yes</button>
-                      <button type="submit" class="btn btn-light">No</button>
+                      <a  class="btn btn-green tx-semibold">Yes</a>
+                      <a  class="btn btn-light">No</a>
                     </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-12 pd-y-5">
                       <p class="mg-b-0">Identify Successors?</p>
                       <div class="">
-                        <button type="submit" class="btn btn-light">Yes</button>
-                        <button type="submit" class="btn btn-danger tx-semibold">No</button>
+                        <a class="btn btn-light">Yes</a>
+                        <a class="btn btn-danger tx-semibold">No</a>
                       </div>
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-12 pd-y-5">
                       <p class="mg-b-0">Talent matrix position</p>
                       <div class="">
-                        <button type="submit" class="btn btn-light tx-dark tx-semibold">World Class Role Model</button>
+                        <a class="btn btn-light tx-dark tx-semibold">World Class Role Model</a>
                       </div>
                     </div>
                   </div>
@@ -356,9 +358,9 @@
                   <div class="pd-t-20">
                     <p class="mg-b-0">Nature of current role</p>
                     <div class="">
-                      <button type="submit" class="btn btn-green tx-semibold">Critical</button>
-                      <button type="submit" class="btn btn-light">Not Critical</button>
-                      <button type="submit" class="btn btn-light">Support</button>
+                      <a  class="btn btn-green tx-semibold">Critical</a>
+                      <a  class="btn btn-light">Not Critical</a>
+                      <a  class="btn btn-light">Support</a>
                     </div>
                   </div>
                 </div>
