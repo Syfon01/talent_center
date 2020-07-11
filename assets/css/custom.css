@@ -137,3 +137,16 @@ h6 {
 .bg-talenticon{
   background: #801010;
 }
+
+.evaluated{
+  border: 1px solid #86B49B;
+  background-color: #EEF5EC;
+  color: #17543F;
+  border-radius: 50px;
+}
+.not-evaluated{
+  border: 1px solid #D1CEB8;
+  background-color: #FBF5E4;
+  color: #773C20;
+  border-radius:50px;
+}
