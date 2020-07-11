@@ -175,16 +175,17 @@ h6 {
   }
 }
 
-@media (min-width: 1500px) {
+/* @media (min-width: 40px) {
   .sidebar-fix {
     width: 22rem;
-    margin-left: 5rem;
+    margin-left: 1rem;
   }
-}
+} */
 
-@media (min-width: 1950px) {
+
+@media (min-width: 1800px) {
   .sidebar-fix {
     width: 22rem;
-    margin-left: 19rem;
+    margin-left: 14rem;
   }
 }
