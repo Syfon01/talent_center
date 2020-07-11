@@ -4,6 +4,12 @@
  * This style is use in profile page, connections, groups, events and timeline.
  *
  */
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+body{
+ font-family: "Roboto",
+  sans-serif;
+  ;
+}
 .page-profile {
   color: #1b2e4b; }
 
