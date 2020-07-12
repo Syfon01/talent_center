@@ -216,3 +216,17 @@ background-color: #FCF6E5;
 .not-flag {
   background-color: #8A6116;
 }
+.radio-check{
+  border: 1px solid #0373A5;
+  color: #0373A5;
+  border-radius: 5px;
+}
+
+.radio-uncheck{
+  border: 1px solid #DDDDDD;
+  border-radius: 5px;
+
+}
+.label-text{
+  font-size: 13px!important;
+}

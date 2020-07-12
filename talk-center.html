@@ -220,16 +220,16 @@
                   <div class="card  mg-y-20">
                     <div class="pd-40">
                     <div class="row">
-                      <div class="col-lg-1">
+                      <div class="col-lg-1 col-2">
                         <img src="./assets/img/ques.svg" class="img-fluid" />
                       </div>
-                      <div class="col-lg-6 cl-md-8 col-xl-6 col-12">
+                      <div class="col-lg-6 col-md-8 col-xl-6 col-10">
                         <h6 class="question">What are Sumayyah's Performance goals?</h6>
                         <p class="tx-gray-500">Kindly select roles for employee</p>
 
                         <form action="">
                           <label for="">Proposed immediate next role (Short Term)</label>
-                          <select class="custom-select">
+                          <select class="custom-select mg-b-15">
                             <option selected>Select Role</option>
                             <option value="1">Banker</option>
                             <option value="2">IT</option>
@@ -237,7 +237,7 @@
                           </select>
 
                           <label for="">Proposed next role (Medium Term)</label>
-                          <select class="custom-select">
+                          <select class="custom-select mg-b-15">
                             <option selected>Select Role</option>
                             <option value="1">Banker</option>
                             <option value="2">IT</option>
@@ -259,38 +259,109 @@
 
                     <div class="pd-40">
                       <div class="row">
-                        <div class="col-lg-1">
+                        <div class="col-lg-1 col-2">
                           <img src="./assets/img/ques.svg" class="img-fluid" />
                         </div>
-                        <div class="col-lg-6 cl-md-8 col-xl-6 col-12">
+                        <div class="col-lg-11 col-md-11 col-xl-11 col-10">
                           <h6 class="question">Succession Planning for Sumayyah</h6>
                           <p class="tx-gray-500">You can add as many as you want using the add more button.</p>
                     
-                          <form action="">
-                            <label for="">Proposed immediate next role (Short Term)</label>
+                          
+                          <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xl-3 col-12 mg-y-6">
+                              <label for="">In succession pool?</label>
+                              <div class="row">
+                                <div class="col-6 pd-r-3">
+                                  <div class="radio-check pd-y-5 pd-x-10">
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked>
+                                      <label class="custom-control-label" for="customRadio1">Yes</label>
+                                    </div>
+                                    </div>
+                                  </div>
+                                                              
+                                <div class="col-6 pd-l-3">
+                                  <div class="radio-uncheck pd-y-5 pd-x-10">
+                                      <div class="custom-control custom-radio">
+                                        <input type="radio" id="customRadio1" name="customRadio"
+                                          class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">No</label>
+                                      </div>
+                                  </div>          
+                                </div>                                
+                              </div>
+                            </div>
+                            <div class="col-lg-6 col-xl-3 col-md-6 col-12 mg-y-6">
+                              <label for="">Identified successors?</label>
+                              <div class="row">
+                                <div class="col-6 pd-r-3">
+                                  <div class="radio-check pd-y-5 pd-x-10">
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="customRadio1" name="customRadio"
+                                        class="custom-control-input" checked>
+                                      <label class="custom-control-label" for="customRadio1">Yes</label>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-6 pd-l-3">
+                                  <div class="radio-uncheck pd-y-5 pd-x-10">
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="customRadio1" name="customRadio"
+                                        class="custom-control-input">
+                                      <label class="custom-control-label" for="customRadio1">No</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 col-xl-6 col-md-12 col-12 mg-y-6">
+                              <label for="">In succession pool?</label>
+                              <div class="row">
+                                <div class="col-md-4 col-6 pd-r-3">
+                                  <div class="radio-check pd-y-5 pd-x-10">
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="customRadio1" name="customRadio"
+                                        class="custom-control-input" checked>
+                                      <label class="custom-control-label label-text"
+                                        for="customRadio1">Criticial</label>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-6 col-md-5 pd-l-3 pd-r-0">
+                                  <div class="radio-uncheck pd-y-5 pd-l-10">
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="customRadio1" name="customRadio"
+                                        class="custom-control-input">
+                                      <label class="custom-control-label label-text" for="customRadio1">Not
+                                        Criticial</label>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="col-12 col-md-3 pd-x-3">
+                                  <div class="radio-uncheck pd-y-5 pd-x-10">
+                                    <div class="custom-control custom-radio">
+                                      <input type="radio" id="customRadio1" name="customRadio"
+                                        class="custom-control-input">
+                                      <label class="custom-control-label label-text" for="customRadio1">Support</label>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-6 col-12 mg-t-40 pd-l-3">
+                            <label for="">Talent matrix position</label>
                             <select class="custom-select">
                               <option selected>Select Role</option>
                               <option value="1">Banker</option>
                               <option value="2">IT</option>
                               <option value="3">Analyst</option>
                             </select>
-                    
-                            <label for="">Proposed next role (Medium Term)</label>
-                            <select class="custom-select">
-                              <option selected>Select Role</option>
-                              <option value="1">Banker</option>
-                              <option value="2">IT</option>
-                              <option value="3">Analyst</option>
-                            </select>
-                    
-                            <label for="">Final destination role (Long Term)</label>
-                            <select class="custom-select">
-                              <option selected>Select Role</option>
-                              <option value="1">Banker</option>
-                              <option value="2">IT</option>
-                              <option value="3">Analyst</option>
-                            </select>
-                          </form>
+                          </div>
                         </div>
                       </div>
                     </div>
