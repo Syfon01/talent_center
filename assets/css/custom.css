@@ -190,9 +190,20 @@ h6 {
   }
 }
 
+
 .nav-link.active{
   font-weight: 700!important;
 }
 .question{
   font-weight: 700!important;
+}
+.flag{
+  background-color: #637381;
+}
+.flag-icon{
+  width: 18px!important;
+  height: 18px!important;
+}
+.evaluate-card{
+  background-color: #F4F6F8;
 }
