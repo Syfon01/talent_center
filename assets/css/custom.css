@@ -74,32 +74,14 @@ h6 {
   margin-left: 16.25rem;
 }
 
-.btn-green {
-  background-color: #108043;
-  color: #fff!important;
-}
-
-.bg-green {
-  background-color: #108043;
-}
-
-.bg-grey {
-  background-color: #DDDDDD;
-}
-
-.talkcenter-bg {
+.performance-bg {
   background: #F9F9F9;
+  height: 100vh;
 }
 
 .tx-gray-500 {
   color: #777777 !important;
 }
-
-.btn-light {
-  background: #F9F9F9 !important;
-  color: #777777
-}
-
 @media (max-width: 576px) {
   .sidebar-fix {
     position: relative !important;
@@ -122,7 +104,7 @@ h6 {
     z-index: 1000;
   }
 
-  .talkcenter-bg {
+  .performance-bg {
     margin-top: 50px;
   }
 
@@ -134,39 +116,12 @@ h6 {
     width: 95% !important
   }
 }
-.bg-talenticon{
-  background: #801010;
-  margin-top: -50px;
-}
-
-.evaluated{
-  border: 1px solid #86B49B;
-  background-color: #EEF5EC;
-  color: #17543F;
-  border-radius: 50px;
-}
-.not-evaluated{
-  border: 1px solid #D1CEB8;
-  background-color: #FBF5E4;
-  color: #773C20;
-  border-radius:50px;
-}
 .btn-view{
   border: 2px solid #C5D9E8;
   color: #358ED7;
 }
 .status-pad{
   padding-top:1.2rem!important
-}
-.add-more{
-  border: 1px dashed #1F75BC;
-  background-color: #E7F1F9;
-  color: #358ED7!important;
-  font-weight: 500;
-  text-align: left!important;
-}
-.btn-danger{
-  color: #fff!important;
 }
 @media (min-width: 1600px) {
   .sidebar-fix{
@@ -175,14 +130,6 @@ h6 {
   }
 }
 
-/* @media (min-width: 40px) {
-  .sidebar-fix {
-    width: 22rem;
-    margin-left: 1rem;
-  }
-} */
-
-
 @media (min-width: 1800px) {
   .sidebar-fix {
     width: 22rem;
@@ -190,43 +137,15 @@ h6 {
   }
 }
 
-
 .nav-link.active{
   font-weight: 700!important;
 }
-.question{
-  font-weight: 700!important;
+.list-group-item.active{
+  background-color: #ECF5FD!important;
+  color: #000!important;
+  font-weight: 700;
 }
-.flag{
-  background-color: #637381;
-}
-.flag-icon{
-  width: 18px!important;
-  height: 18px!important;
-}
-.evaluate-card{
-  background-color: #F4F6F8;
-  border-top: 2px solid #777777;
-}
-
-.not-evaluate-card{
-  border-top: 2px solid #777777;
-background-color: #FCF6E5;
-}
-.not-flag {
-  background-color: #8A6116;
-}
-.radio-check{
-  border: 1px solid #0373A5;
-  color: #0373A5;
-  border-radius: 5px;
-}
-
-.radio-uncheck{
-  border: 1px solid #DDDDDD;
-  border-radius: 5px;
-
-}
-.label-text{
-  font-size: 13px!important;
+.list-group-item{
+  background: transparent!important;
+  border: none!important;
 }
