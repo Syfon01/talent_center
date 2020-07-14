@@ -177,4 +177,13 @@ h6 {
   background-color: #F4F6F8;
   border-top: 2px solid #777777;
 }
+.flag {
+  background-color: #637381;
+}
+
+.flag-icon {
+  width: 18px !important;
+  height: 18px !important;
+}
+
 
