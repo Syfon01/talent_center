@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+body {
+  font-family: "Roboto",
+    sans-serif;
+  ;
+}
+
 h1,
 h2,
 h3,
@@ -148,4 +156,11 @@ h6 {
 .list-group-item{
   background: transparent!important;
   border: none!important;
+}
+.perform-head{
+  font-weight: 300;
+}
+.table-font{
+  font-size: 0.85rem;
+  color: #2C405A;
 }
