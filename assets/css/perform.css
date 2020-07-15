@@ -183,5 +183,11 @@ h6 {
 }
 .view-manager-btn{
   color: #358ED7;
+  /* background-color: ; */
+  border: 2px solid #358ED7;
+}
+.conduct-self-btn{
+  color: #fff;
+  background-color: #358ED7;
   
 }
