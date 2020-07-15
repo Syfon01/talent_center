@@ -29,14 +29,14 @@ h6 {
 
 .sidebar-fix {
   height: 100%;
-  width: 21.875rem;
+  width: 16.25rem;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: 0;
+ left: auto !important;
+ right: inherit !important;
   overflow: hidden;
   padding-top: 6.25rem;
-  padding-left: 6.25rem;
 }
 
 @media (max-width: 768px) {
@@ -45,10 +45,10 @@ h6 {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: auto !important;
+    right: inherit !important;
     overflow: hidden;
     padding-top: 6.25rem;
-    padding-left: 2.25rem;
   }
 }
 
@@ -58,24 +58,11 @@ h6 {
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: auto !important;
+    right: inherit !important;
     overflow: hidden;
     padding-top: 6.25rem;
-    padding-left: 2.25rem;
-  }
 }
-
-@media (max-width: 1025.98px) {
-  .sidebar-fix {
-    width: 16.25rem;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    padding-top: 6.25rem;
-    padding-left: 2.25rem;
-  }
 }
 
 .media-body {
@@ -135,19 +122,6 @@ h6 {
   padding-top: 1.2rem !important
 }
 
-@media (min-width: 1600px) {
-  .sidebar-fix {
-    width: 22rem;
-    margin-left: 11rem;
-  }
-}
-
-@media (min-width: 1800px) {
-  .sidebar-fix {
-    width: 22rem;
-    margin-left: 14rem;
-  }
-}
 
 .nav-link.active {
   font-weight: 700 !important;
