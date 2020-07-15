@@ -168,13 +168,13 @@
                       <table class="table table-hover table-striped">
                         <thead>
                           <tr>
-                            <th scope="col" class=" tx-13 tx-gray-500">S/N</th>
-                            <th scope="col" class=" tx-13 tx-gray-500">Role</th>
-                            <th scope="col" class=" tx-13 tx-gray-500">Number of items</th>
-                            <th scope="col" class=" tx-13 tx-gray-500">Status</th>
-                            <th scope="col" class="tx-13 tx-gray-500">Date Created</th>
-                            <th scope="col" class="tx-13 tx-gray-500">Date Modified</th>
-                            <th scope="col" class=" tx-13 tx-gray-500"></th>
+                            <th scope="col" class=" tx-13 ">S/N</th>
+                            <th scope="col" class=" tx-13 ">Role</th>
+                            <th scope="col" class=" tx-13 ">Number of items</th>
+                            <th scope="col" class=" tx-13 ">Status</th>
+                            <th scope="col" class="tx-13 ">Date Created</th>
+                            <th scope="col" class="tx-13 ">Date Modified</th>
+                            <th scope="col" class=" tx-13"></th>
 
                           </tr>
                         </thead>
@@ -183,7 +183,7 @@
                             <td class="table-font">1</td>
                             <td class="table-font">Manager</td>
                             <td class="table-font">4</td>
-                            <td class="table-font">Functional</td>
+                            <td class="table-font">Yet to be assessed</td>
                             <td class="table-font">30 Dec, 2021</td>
                             <td class="table-font">30 Dec, 2021</td>
                             <td class="table-font"><a class="btn btn-view pd-x-40" href="">View KPI</a></td>
@@ -192,7 +192,7 @@
                             <td class="table-font">2</td>
                             <td class="table-font"> Assistant Manager</td>
                             <td class="table-font">2</td>
-                            <td class="table-font">Administrative</td>
+                            <td class="table-font">Assessed</td>
                             <td class="table-font">30 Dec, 2021</td>
                             <td class="table-font">30 Dec, 2021</td>
                             <td class="table-font"><a class="btn btn-view pd-x-40" href="">View KPI</a></td>
@@ -207,12 +207,12 @@
                     <table class="table table-hover table-striped">
                       <thead>
                         <tr>
-                          <th scope="col" class=" tx-13 tx-gray-500">S/N</th>
-                          <th scope="col" class=" tx-13 tx-gray-500">Name</th>
-                          <th scope="col" class=" tx-13 tx-gray-500">Number of KPIs</th>
-                          <th scope="col" class="tx-13 tx-gray-500">Date Created</th>
-                          <th scope="col" class="tx-13 tx-gray-500">Date Modified</th>
-                          <th scope="col" class=" tx-13 tx-gray-500"></th>
+                          <th scope="col" class=" tx-13 ">S/N</th>
+                          <th scope="col" class=" tx-13 ">Name</th>
+                          <th scope="col" class=" tx-13 ">Number of KPIs</th>
+                          <th scope="col" class="tx-13 ">Date Created</th>
+                          <th scope="col" class="tx-13 ">Date Modified</th>
+                          <th scope="col" class=" tx-13"></th>
 
                         </tr>
                       </thead>
@@ -275,13 +275,13 @@
                     <table class="table table-hover table-striped">
                       <thead>
                         <tr>
-                          <th scope="col" class=" tx-13 tx-gray-500">S/N</th>
-                          <th scope="col" class=" tx-13 tx-gray-500">Name</th>
-                          <th scope="col" class=" tx-13 tx-gray-500">Number of KPIs</th>
-                          <th scope="col" class=" tx-13 tx-gray-500">Status</th>
-                          <th scope="col" class="tx-13 tx-gray-500">Date Created</th>
-                          <th scope="col" class="tx-13 tx-gray-500">Date Modified</th>
-                          <th scope="col" class=" tx-13 tx-gray-500"></th>
+                          <th scope="col" class=" tx-13 ">S/N</th>
+                          <th scope="col" class=" tx-13 ">Name</th>
+                          <th scope="col" class=" tx-13 ">Number of KPIs</th>
+                          <th scope="col" class=" tx-13 ">Status</th>
+                          <th scope="col" class="tx-13 ">Date Created</th>
+                          <th scope="col" class="tx-13 ">Date Modified</th>
+                          <th scope="col" class=" tx-13"></th>
 
                         </tr>
                       </thead>
@@ -344,6 +344,69 @@
                   </div>
                 </div>
                 <h1 class="perform-head">KPI Assessment</h1>
+                  <ul class="nav  nav-line " id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link custom-link active" id="personal-assess-tab" data-toggle="tab"
+                        href="#personal-assess"
+                        role="tab" aria-controls="personal-assess" aria-selected="true">Your KPI <span
+                          class="tx-13 pd-l-5">(5)</span></a>
+                    </li>
+                    
+                  </ul>
+                  <div class="tab-content bd bd-gray-300 bd-t-0 mg-y-40 border-0" id="myTabContent">
+                    <div class="tab-pane fade show active" id="personal-assess" role="tabpanel"
+                      aria-labelledby="personal-assess-tab">
+                      <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col" class=" tx-13 th-font">KPI name</th>
+                              <th scope="col" class=" tx-13 th-font">Definition/Decription</th>
+                              <th scope="col" class=" tx-13 th-font">Weight (%)</th>
+                              <th scope="col" class=" tx-13 th-font">Target</th>
+                              <th scope="col" class="tx-13 th-font">Actual</th>
+                              <th scope="col" class="tx-13 th-font">Comments</th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="table-font">Profitability(PBT Ranking)</td>
+                              <td class="table-font">Achievement of country PBT target</td>
+                              <td class="table-font">4</td>
+                              <td class="table-font">5</td>
+                              <td class="table-font">-</td>
+                              <td class="table-font">-</td>
+                            </tr>
+                            <tr>
+                              <td class="table-font">Customer service experience</td>
+                              <td class="table-font"> Internal Customer Satisfaction target, benchmarked against KPMG
+                                rating</td>
+                              <td class="table-font">15</td>
+                              <td class="table-font">15</td>
+                              <td class="table-font">-</td>
+                              <td class="table-font">-</td>
+                            </tr>
+                            <tr>
+                              <td class="table-font">Bankwide Regulatory Compliance</td>
+                              <td class="table-font"> Maintain a culture of zero tolerance for regulatory infractions
+                                and penalties</td>
+                              <td class="table-font">10</td>
+                              <td class="table-font">10</td>
+                              <td class="table-font">-</td>
+                              <td class="table-font">-</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+<div class="d-flex justify-content-end">
+  <button disabled="disabled" class="btn mg-x-20 view-manager-btn">View manager's assessment</button>
+  <button disabled="disabled" class="btn conduct-self-btn">Conduct self assessment</button>
+
+</div>
+                    </div>
+                    
+                  </div>
 
               </div>
               <div class="tab-pane fade" id="list-tasks" role="tabpanel" aria-labelledby="list-tasks-list">
