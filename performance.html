@@ -11,6 +11,8 @@
 
   <!-- Favicon -->
   <link rel="shortcut icon" type="" href="./assets/img/favicon.svg">
+
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css"> -->
   <link
     href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900italic,900'
     rel='stylesheet' type='text/css'>
@@ -69,26 +71,51 @@
             <div class="tab-content" id="nav-tabContent">
               <div class="tab-pane fade show active" id="list-dashboard" role="tabpanel" aria-labelledby="list-dashboard-list">
                 <h1 class="perform-head">Dashboard</h1>
+                <div>
+                  <!-- <div class="card">
+                    <div class="row">
+                      <div class="col-md-3"></div>
+                    </div>
+                  </div> -->
+                  <div class="row">
+                    <div class="col-md-8 col-lg-8 col-xl-8 col-12">
+                      <div class="card pd-20">
+                        <div class="row pd-x-20">
+                          <p class="tx-bold">Samuel, your task chart</p>
+                        </div>
+                        <div class="chart-container">
+                        <canvas id="myChart"> </canvas>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-4 col-12">
+                      <div class="card pd-20">
+                          <p class="tx-bold">Recent tasks</p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
 
               <div class="tab-pane fade" id="list-management" role="tabpanel" aria-labelledby="list-management-list">
                 <h1 class="perform-head">KPI Management</h1>
                 <ul class="nav  nav-line " id="myTab" role="tablist">
                   <li class="nav-item">
-                    <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab"
+                    <a class="nav-link custom-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab"
                       aria-controls="personal" aria-selected="true">Your KPI <span class="tx-13 pd-l-5">(7)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="direct-tab" data-toggle="tab" href="#direct" role="tab"
+                    <a class="nav-link custom-link" id="direct-tab" data-toggle="tab" href="#direct" role="tab"
                       aria-controls="direct" aria-selected="false">Direct report's KPI <span class="tx-13 pd-l-5">(25)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="manager-tab" data-toggle="tab" href="#manager" role="tab"
+                    <a class="nav-link custom-link" id="manager-tab" data-toggle="tab" href="#manager" role="tab"
                       aria-controls="manager" aria-selected="false">Manager's KPI <span
                         class="tx-13 pd-l-5">(9)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" id="group-tab" data-toggle="tab" href="#group" role="tab"
+                    <a class="nav-link custom-link" id="group-tab" data-toggle="tab" href="#group" role="tab"
                       aria-controls="group" aria-selected="false">Group's Report <span
                         class="tx-13 pd-l-5">(3)</span></a>
                   </li>
@@ -295,6 +322,54 @@
   <script src="./lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
   <script src="./assets/js/dashforge.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script>
+  var ctx = document.getElementById('myChart').getContext('2d');
+  var chart = new Chart(ctx, {
+  // The type of chart we want to create
+  type: 'line',
+
+  // The data for our dataset
+  data: {
+  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+  datasets: [{
+  label: 'Task Chart',
+  backgroundColor: 'transparent',
+  borderColor: 'rgb(255, 99, 132)',
+  data: [0, 10, 50, 2, 20, 30, 45,80, 100]
+  }]
+  },
+
+  // Configuration options go here
+  options: {
+    responsive: true,
+    tooltips: {
+    titleFontSize: 10,
+    bodyFontSize: 10,
+    },
+    scales: {
+      xAxes: [{
+        display: true,
+        scaleLabel: {
+        display: true,
+        padding: 5,
+        fontStyle:'bold',
+        labelString: 'Time'
+        }
+    }],
+      yAxes: [{
+        display: true,
+        scaleLabel: {
+          padding: 20,
+        display: true,
+        fontStyle:'bold',
+        labelString: 'Completion(%)'
+        }
+      }]
+    }
+  }
+  });
+  </script>
 
 </body>
 
