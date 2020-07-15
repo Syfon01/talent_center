@@ -179,6 +179,7 @@ h6 {
   left: auto!important;
   right: inherit!important;
   width: inherit;
+  margin-top: 30vh;
 }
 .view-manager-btn{
   color: #358ED7;
