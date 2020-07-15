@@ -194,3 +194,11 @@ h6 {
 .custom-link:hover {
   color: #000;
 }
+.custom-select{
+  font-size: 0.75rem!important;
+  font-weight: 700!important;
+  padding: 0.3rem 1.2rem 0.3rem 0.4rem!important;
+}
+.add-link{
+  color: #358ED7;
+}
