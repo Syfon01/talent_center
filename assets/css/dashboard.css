@@ -1,3 +1,12 @@
+.navbar-header-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+
 .offset-div{
   margin-top: -20%;
 }
@@ -34,4 +43,30 @@ input[type=checkbox]:checked+label.strikethrough {
 }
 .greet-text{
   font-weight: 300;
+}
+.dashboard-img{
+  min-height: 30vh!important;
+}
+@media (max-width: 576px) {
+  .offset-div{
+    margin-top: -40%;
+  }
+  .dashboard-img {
+    min-height: 30vh !important;
+  }
+}
+.navbar-header .navbar-brand{
+  width:auto!important;
+  padding: 0 30px!important;
+  background-color: #333333;
+  color: #fff;
+  height: 100%;
+  margin: 0!important;
+}
+
+.navbar-menu .head-link.active .nav-link {
+  background-color: #ECF5FD;
+  color: #2C405A;
+  padding: 5px 20px!important;
+  border-radius: 5px;
 }
