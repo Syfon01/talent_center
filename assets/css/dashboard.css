@@ -78,3 +78,7 @@ input[type=checkbox]:checked+label.strikethrough {
   position: relative;
   float:left;
 } */
+
+.label-color{
+  color: #777;
+}
