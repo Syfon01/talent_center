@@ -32,3 +32,6 @@ input[type=checkbox]:checked+label.strikethrough {
   /* z-index: 2; */
   cursor: pointer;
 }
+.greet-text{
+  font-weight: 300;
+}
