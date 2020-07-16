@@ -55,3 +55,18 @@ input[type=checkbox]:checked+label.strikethrough {
     min-height: 30vh !important;
   }
 }
+.dir-img{
+  width: 30px;
+  height: 30px;
+}
+.view-all{
+  color: #358ED7!important;
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+/* .img-group span:not(:first-child) .dir-img {
+  margin-left: -10px;
+  margin-right: 0;
+  position: relative;
+  float:left;
+} */
