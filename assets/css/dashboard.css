@@ -55,23 +55,3 @@ input[type=checkbox]:checked+label.strikethrough {
     min-height: 30vh !important;
   }
 }
-.navbar-header .navbar-brand{
-  width:auto!important;
-  padding: 0 30px!important;
-  background-color: #333333;
-  color: #fff;
-  height: 100%;
-  margin: 0!important;
-}
-
-.navbar-menu .head-link.active .nav-link {
-  background-color: #ECF5FD;
-  color: #2C405A!important;
-  padding: 5px 20px!important;
-  border-radius: 5px;
-  font-weight: 600;
-}
-.navbar-menu .nav-link{
-  color:#777777!important;
-  font-weight: 400;
-}
