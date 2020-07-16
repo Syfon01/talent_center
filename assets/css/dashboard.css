@@ -1,0 +1,7 @@
+.offset-div{
+  margin-top: -20%;
+}
+
+input[type=checkbox]:checked+label.strikethrough {
+  text-decoration: line-through;
+}
