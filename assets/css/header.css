@@ -7,13 +7,13 @@
   margin: 0 !important;
 }
 
-.navbar-menu .head-link.active .nav-link {
+.navbar-menu .nav-item .nav-link.active {
   background-color: #ECF5FD;
   color: #2C405A !important;
   padding: 5px 20px !important;
   border-radius: 5px;
   font-weight: 600;
-}
+} 
 
 .navbar-menu .nav-link {
   color: #777777 !important;
@@ -25,4 +25,7 @@
 }
 .dropdown-profile .dropdown-link{
   display: block!important;
+}
+.head-text{
+  color: #fff!important;
 }
