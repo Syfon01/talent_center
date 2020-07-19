@@ -1,0 +1,24 @@
+.dashboard-pro{
+  border-radius: 15px;
+  width: 48px;
+  height: 48px;
+}
+.text-muted{
+  color: #777!important;
+}
+.text-label{
+  color: #8DABC4;
+  margin-bottom: 0!important;
+}
+.tx-16{
+font-size: 1rem!important;
+}
+.tx-14{
+font-size: 0.875rem!important;
+}
+.tx-13{
+font-size: 0.8125rem!important;
+}
+.card-body, .card-header{
+  padding: 10px 20px!important;
+}
