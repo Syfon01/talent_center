@@ -57,6 +57,7 @@ font-size: 0.8125rem!important;
 }
 .dash-card-body{
   background-color: #F9F9F9!important;
+  border-radius: 0.23rem;
 }
 .input-background{
   background-color: transparent;
