@@ -26,21 +26,13 @@ body {
   cursor: pointer;
 }
 
-.dashboard-pro{
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-}
 .header-text{
   color: #C8C8C8;
 }
 .text-muted{
-  color: #777!important;
+  color: #777777!important;
 }
-.text-label{
-  color: #8DABC4;
-  margin-bottom: 0!important;
-}
+
 .tx-16{
 font-size: 1rem!important;
 }
@@ -54,13 +46,14 @@ font-size: 0.8125rem!important;
   font-size: 0.75rem !important;
 }
 .card-body, .card-header{
-  padding: 10px 20px!important;
+  padding: 10px 10px!important;
 }
 .title-text{
   font-weight: 200!important;
 }
 .dash-card-header {
   background-color: #E1E1E1!important;
+  
 }
 .dash-card-body{
   background-color: #F9F9F9!important;
@@ -79,7 +72,7 @@ font-size: 0.8125rem!important;
 }
 .bg-green{
   background-color: #29868E;
-  border: 1px solid #fff;
+  border: 1px solid rgba(240, 232, 232, 0.541);
   border-radius: 5px;
 }
 .bg-grey{
@@ -102,6 +95,8 @@ font-size: 0.8125rem!important;
 }
 .side-dash-header{
   background-color: #424147;
+    /* border: 1px solid #B7D2E58C; */
+
 }
 .text-regular{
   font-weight: 400;
