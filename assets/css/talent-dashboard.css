@@ -107,7 +107,7 @@ font-size: 0.8125rem!important;
   font-weight: 400;
 }
 .fixed-body{
-max-height: 50vh;
+max-height: 75vh;
 overflow-y: auto;
 }
 ::-webkit-scrollbar {
