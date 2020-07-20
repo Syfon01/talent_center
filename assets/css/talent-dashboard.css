@@ -106,3 +106,13 @@ font-size: 0.8125rem!important;
 .text-regular{
   font-weight: 400;
 }
+.fixed-body{
+max-height: 50px;
+overflow-y: auto;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  /* Remove scrollbar space */
+  background: transparent;
+  /* Optional: just make scrollbar invisible */
+}
