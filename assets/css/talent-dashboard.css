@@ -45,7 +45,7 @@ font-size: 0.8125rem!important;
 .tx-12 {
   font-size: 0.75rem !important;
 }
-.card-body, .card-header{
+.card-style-body, .card-header{
   padding: 10px 10px!important;
 }
 .title-text{
@@ -57,7 +57,7 @@ font-size: 0.8125rem!important;
 }
 .dash-card-body{
   background-color: #F9F9F9!important;
-  border-radius: 0.23rem;
+  border-radius: 0.25rem;
 }
 .input-background{
   background-color: transparent;
