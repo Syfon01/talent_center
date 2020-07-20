@@ -1,7 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+body {
+  font-family: "Roboto",
+    sans-serif;
+  ;
+}
+
+.dashboard-bg{
+  background-image: url(../img/dashboard-talent.png);
+}
+.navbar-transparent{
+  background-color: transparent;
+}
+.overlay {
+  position: fixed;
+  /* display: none; */
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(51, 51, 51, 0.9);
+  /* z-index: 2; */
+  cursor: pointer;
+}
+
 .dashboard-pro{
-  border-radius: 15px;
+  border-radius: 50%;
   width: 48px;
   height: 48px;
+}
+.header-text{
+  color: #C8C8C8;
 }
 .text-muted{
   color: #777!important;
@@ -19,6 +50,56 @@ font-size: 0.875rem!important;
 .tx-13{
 font-size: 0.8125rem!important;
 }
+.tx-12 {
+  font-size: 0.75rem !important;
+}
 .card-body, .card-header{
   padding: 10px 20px!important;
+}
+.title-text{
+  font-weight: 200!important;
+}
+.dash-card-header {
+  background-color: #E1E1E1!important;
+}
+.dash-card-body{
+  background-color: #F9F9F9!important;
+}
+.input-background{
+  background-color: transparent;
+}
+.searchbar-form{
+  width: 70%;;
+}
+.search-form button{
+  border: none;
+}
+.form-control{
+  border: none;
+}
+.bg-green{
+  background-color: #29868E;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+.bg-grey{
+  background-color: #FFFFFF24;
+  border: 1px solid #707070;
+  border-radius: 5px;
+
+}
+.text-grey{
+  color: #BDC6CF;
+}
+.card-transparent{
+  background-color: transparent;
+  border: 1px solid #B7D2E58C;
+}
+
+.badge-green{
+  background-color: #29868E;
+  padding: 3px;
+}
+.side-dash-header{
+  background-color: #424147;
 }

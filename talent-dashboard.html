@@ -18,123 +18,179 @@
   <title>UBA Talk Center</title>
   <!-- DashForge CSS -->
   <link rel="stylesheet" href="./assets/css/dashforge.css">
-  <link rel="stylesheet" href="./assets/css/dashforge.profile.css">
-  <link rel="stylesheet" href="./assets/css/custom.css">
-  <link rel="stylesheet" href="./assets/css/header.css">
   <link rel="stylesheet" href="./assets/css/talent-dashboard.css">
 
 
 </head>
 
-<body class="page-profile">
-  <div class="container-fluid">
-    <div class="row">
-    <div class="col-lg-8 col-xl-8 col-md-8 col-12">
-      <div class="d-flex justify-content-end ">
-        <div class="">
-        <p class=""> <i data-feather="flag" class="flag-icon mg-r-5"></i>Filter</p>
-        </div>
-        <div class="search-form mg-l-10">
-          <input type="search" class="form-control" placeholder="Search">
-          <button class="btn" type="button"><i data-feather="search"></i></button>
+<body class="page-profile dashboard-bg">
+  <div class="overlay"></div>
+
+  <header class="navbar navbar-header navbar-header-fixed navbar-transparent">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="/index.html" class="">
+          <h1 class="mg-y-0 header-text">Talent Center</h1>
+        </a>
+      </div>
+      <div id="navbarMenu" class="navbar-menu-wrapper">
+        <form class="searchbar-form">
+          <div class="search-form">
+            <input type="search" class="form-control input-background " placeholder="Search">
+            <button class="btn" type="button"><i data-feather="search"></i></button>
+          </div>
+        </form>
+        
+      </div>
+      <div class="navbar-right">
+        <div class="mg-l-20">
+          <img src="./assets/img/uba.svg" alt="" srcset="">
         </div>
 
       </div>
-
-      <div class="row mg-y-20">
-        <div class="col-lg-6 col-xl-6 col-md-6 col-12 mg-y-10">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-2 col-3 pd-r-5">
-                  <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid dashboard-pro">
-                </div>
-                <div class="col-lg-10 col-9">
-                  <p class="mg-b-0"><span class="tx-bold tx-16">Uzodimma, Samuel King</span> <span class="text-muted tx-14">(29yrs)</span> </p>
-                  <label for="" class="tx-13">IT Expert | Senior Manager</label>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <label for="" class="text-label tx-13">Performance rating</label>
-                  <p class="tx-medium">Role Model</p>
-                </div>
-                <div>
-                  <label for="" class="text-label tx-13">Readiness for next role</label>
-                  <p class="tx-medium">Ready</p>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between">
-                <div>
-                  <label for="" class="text-label tx-13">Nature of current role</label>
-                  <p class="tx-medium">Critical</p>
-                </div>
-                <div>
-                  <label for="" class="text-label tx-13">Talent matrix position</label>
-                  <p class="tx-medium">Critical</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-xl-6 col-md-6 col-12 mg-y-10">
-          <div class="card">
-            <div class="card-header">
-              <div class="row">
-                <div class="col-lg-2 col-3 pd-r-5">
-                  <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid dashboard-pro">
-                </div>
-                <div class="col-lg-10 col-9">
-                  <p class="mg-b-0"><span class="tx-bold tx-16">Uzodimma, Samuel King</span> <span
-                      class="text-muted tx-14">(29yrs)</span> </p>
-                  <label for="" class="tx-13">IT Expert | Senior Manager</label>
-                </div>
-              </div>
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between">
-                <div>
-                  <label for="" class="text-label tx-13">Performance rating</label>
-                  <p class="tx-medium">Role Model</p>
-                </div>
-                <div>
-                  <label for="" class="text-label tx-13">Readiness for next role</label>
-                  <p class="tx-medium">Ready</p>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between">
-                <div>
-                  <label for="" class="text-label tx-13">Nature of current role</label>
-                  <p class="tx-medium">Critical</p>
-                </div>
-                <div>
-                  <label for="" class="text-label tx-13">Talent matrix position</label>
-                  <p class="tx-medium">Critical</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
     </div>
-    <div class="col-lg-4 col-xl-4 col-md-4 col-12">
-      <div class="row">
-        <div class="col-md-6 lg-6 xl-6 sm-12">
-          <div class="card text-left">
+  </header>
+
+  <div class="container mg-t-100">
+    <div class="row">
+      <div class="col-lg-3 col-xl-3 col-md-3 col-12">
+          <div class="d-flex justify-content-between bg-green pd-10">
+            <p class="tx-14 tx-bold tx-white my-0">All talents</p>
+            <p class="tx-14 tx-bold tx-white my-0">365 </p>
+          </div>
+
+          <div class="card card-transparent mg-y-20">
+            <div class="card-header side-dash-header">
+            <p class="tx-14 tx-bold tx-white my-0">By Criteria</p>
+            </div>
             <div class="card-body">
-              <h4 class="card-title">Title</h4>
-              <p class="card-text">Body</p>
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Veteran's list</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">27</span></p>
+              </div>
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Under 30's</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">45</span></p>
+              </div>
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Keyman resources</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">25</span></p>
+              </div>
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Scholar's squad</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">49</span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card-transparent mg-y-20">
+            <div class="card-header side-dash-header">
+              <p class="tx-14 tx-bold tx-white my-0">By Grades</p>
+            </div>
+            <div class="card-body">
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Executive director</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">6</span></p>
+              </div>
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Senior Manager</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">12</span></p>
+              </div>
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Manager</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">21</span></p>
+              </div>
+              <div class="d-flex justify-content-between bg-grey pd-7 mg-y-5">
+                <p class="tx-14  text-grey my-0">Deputy Manager</p>
+                <p class="tx-14 tx-bold text-grey my-0"> <span class="badge-green rounded-circle">34</span></p>
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-lg-9 col-xl-9 col-md-9 col-12">
+        
+        <div class="row mg-y-20">
+          <div class="col-lg-6 col-xl-6 col-md-6 col-12 mg-y-10">
+            <div class="card">
+              <div class="card-header dash-card-header">
+                <div class="row">
+                  <div class="col-lg-2 col-3 pd-r-5">
+                    <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid dashboard-pro">
+                  </div>
+                  <div class="col-lg-10 col-9">
+                    <p class="mg-b-0"><span class="tx-bold tx-16">Uzodimma, Samuel King</span> <span class="text-muted tx-14">(29yrs)</span> </p>
+                    <label for="" class="tx-13">IT Expert | Senior Manager</label>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <label for="" class="text-label tx-12">Performance rating</label>
+                    <p class="tx-medium">Role Model</p>
+                  </div>
+                  <div>
+                    <label for="" class="text-label tx-12">Readiness for next role</label>
+                    <p class="tx-medium">Ready</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <label for="" class="text-label tx-12">Nature of current role</label>
+                    <p class="tx-medium">Critical</p>
+                  </div>
+                  <div>
+                    <label for="" class="text-label tx-12">Talent matrix position</label>
+                    <p class="tx-medium">Critical</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-xl-6 col-md-6 col-12 mg-y-10">
+            <div class="card">
+              <div class="card-header dash-card-header">
+                <div class="row">
+                  <div class="col-lg-2 col-3 pd-r-5">
+                    <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid dashboard-pro">
+                  </div>
+                  <div class="col-lg-10 col-9">
+                    <p class="mg-b-0"><span class="tx-bold tx-16">Uzodimma, Samuel King</span> <span
+                        class="text-muted tx-14">(29yrs)</span> </p>
+                    <label for="" class="tx-13">IT Expert | Senior Manager</label>
+                  </div>
+                </div>
+              </div>
+              <div class="card-body dash-card-body">
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <label for="" class="text-label tx-12">Performance rating</label>
+                    <p class="tx-medium">Role Model</p>
+                  </div>
+                  <div>
+                    <label for="" class="text-label tx-12">Readiness for next role</label>
+                    <p class="tx-medium">Ready</p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                  <div>
+                    <label for="" class="text-label tx-12">Nature of current role</label>
+                    <p class="tx-medium">Critical</p>
+                  </div>
+                  <div>
+                    <label for="" class="text-label tx-12">Talent matrix position</label>
+                    <p class="tx-medium">Critical</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
-</div>
 
  <script src="./lib/jquery/jquery.min.js"></script>
  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
