@@ -116,3 +116,6 @@ overflow-y: auto;
   background: transparent;
   /* Optional: just make scrollbar invisible */
 }
+.card-shadow:hover{
+box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+}
