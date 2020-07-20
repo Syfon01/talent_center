@@ -115,7 +115,23 @@ overflow-y: auto;
   /* Remove scrollbar space */
   background: transparent;
   /* Optional: just make scrollbar invisible */
-}
+} 
 .card-shadow:hover{
-box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+box-shadow: 0.1rem .15rem .35rem rgba(0, 0, 0, .2) !important;
+}
+
+.bg-greyy{
+  background-color: #DDDDDD;
+}
+.btn-green{
+  background-color: #108043;
+  color: #fff!important;
+}
+.btn-light{
+background-color: #F9F9F9!important;
+color: #777777!important;
+}
+.btn-red{
+color: #fff!important;
+background-color: #801010;
 }

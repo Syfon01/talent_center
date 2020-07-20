@@ -117,7 +117,7 @@
             <div class="scroll-body">
               <div class="row pd-x-20">
                 <div class="col-lg-6 col-xl-6 col-md-6 col-12 mg-y-10">
-                  <div class="card">
+                  <div class="card card-shadow" type="button" data-toggle="modal" data-target="#exampleModal">
                     <div class="card-header dash-card-header">
                       <div class="row">
                         <div class="col-lg-2 col-3 pd-r-5">
@@ -203,21 +203,204 @@
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
           aria-hidden="true">
-          <div class="modal-dialog" role="document">
+          <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
+              <div class="modal-header bg-greyy">
+                <p class="modal-title" id="exampleModalLabel">Modal title</p>
+                
               </div>
               <div class="modal-body">
-                ...
+                <div class="card mg-b-20 mg-lg-b-25">
+                  <div class="card-header pd-y-10 pd-x-20 d-flex align-items-center justify-content-between bg-greyy">
+                    <p class="mg-b-0 tx-bold tx-16">Development intervention</p>
+                  </div>
+                  <div class="card-body pd-20 pd-lg-25">
+                    <ul>
+                      <li>A just-in-time to UK office for 3 months</li>
+                      <li>Executive Mentoring</li>
+                    </ul>
+
+                  </div>
+                </div>
+
+                <div class="card mg-b-20 mg-lg-b-25">
+                  <div class="card-header pd-y-10 pd-x-20 d-flex align-items-center justify-content-between bg-greyy">
+                    <p class="mg-b-0 tx-bold tx-16">Performance Goals/History</p>
+
+                  </div>
+                  <div class="card-body bd-b pd-y-10">
+                    <div class="row pd-0">
+                      <div class="col-xl-5 col-lg-5 col-md-5 col-4">
+                        <p class="tx-uppercase tx-13 text-muted tx-semibold mg-b-0">Year</p>
+                      </div>
+                      <div class="col-xl-7 col-lg-7 col-md-7 col-8">
+                        <div class="row">
+                          <div class="col">
+                            <p class="tx-uppercase tx-13 text-muted tx-semibold mg-b-0">fy19</p>
+                          </div>
+                          <div class="col">
+                            <p class="tx-uppercase tx-13 text-muted tx-semibold mg-b-0">fy20</p>
+                          </div>
+                          <div class="col">
+                            <p class="tx-uppercase tx-13 text-muted tx-semibold mg-b-0">fy21</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body bd-b pd-y-0 pd-r-13 bd-r">
+                    <div class="row">
+                      <div class="col-xl-5 col-lg-5 col-md-5 col-6 pd-y-10">
+                        <p class="tx-uppercase tx-13 text-muted tx-semibold mg-b-0">Performance rating</p>
+                      </div>
+                      <div class="col-xl-7 col-lg-7 col-md-7 col-6 bg-gray-100 pd-y-10">
+                        <p class="tx-16 mg-b-0">Role Model</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body bd-b pd-y-0 pd-r-13 bd-r">
+                    <div class="row">
+                      <div class="col-xl-5 col-lg-5 col-md-5 col-6 ">
+                        <p class="tx-uppercase tx-13 text-muted tx-semibold mg-b-0 pd-y-10">Readiness for next role</p>
+                      </div>
+                      <div class="col-xl-7 col-lg-7 col-md-7 col-6 bg-gray-100">
+                        <div class="row">
+                          <div class="col pd-y-10">
+                            <p class="tx-16 mg-b-0">Ready</p>
+                          </div>
+                          <div class="col pd-y-10">
+                            <p class="tx-16 mg-b-0">Needs more time</p>
+                          </div>
+                          <div class="col">
+                            <p class="tx-16 mg-b-0 pd-y-10">Not ready</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="card-body bd-b pd-y-20  bd-r">
+                    <div class="row">
+                      <div class="col-xl-8 col-lg-8 col-md-7 col-12 ">
+                        <p class="tx-13 text-muted mb-0">Proposed Immediate Next role(Short Term)</p>
+                        <p class="next-role tx-uppercase">Head of ig/Agm</p>
+                      </div>
+                      <div class="col-xl-4 col-lg-4 col-md-5 col-12 ">
+                        <p class="tx-13 text-muted mb-0">Last promotion date</p>
+                        <p class="promotion-date">30 December, 2019</p>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="tx-13 text-muted mb-0">Proposed Next role(Medium Term)</p>
+                      <p class="next-role tx-uppercase">Head of it</p>
+                    </div>
+
+                    <div>
+                      <p class="tx-13 text-muted mb-0">Final Destination role(Long Term)</p>
+                      <p class="next-role tx-uppercase">Head of ig/Agm</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mg-b-20 mg-lg-b-25">
+                  <div class="card-header pd-y-10 pd-x-20 d-flex align-items-center justify-content-between bg-greyy">
+                    <p class="mg-b-0 tx-bold tx-16">Succession Planning</p>
+
+                  </div>
+                  <div class="card-body pd-0">
+                    <div class="table-responsive">
+                      <table class="table table-hover table-striped">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="tx-uppercase tx-13 text-muted">Talent Engagement Interventions</th>
+                            <th scope="col" class="tx-uppercase tx-13 text-muted">Responsibility</th>
+                            <th scope="col" class="tx-uppercase tx-13 text-muted">Timeline</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Succession Pool</td>
+                            <td>IT/HCM</td>
+                            <td>30 Dec, 2021</td>
+                          </tr>
+                          <tr>
+                            <td>Secondment/Rotation/Just-in-time</td>
+                            <td>Ready</td>
+                            <td>01 Apr, 2021</td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+
+                    <div class="pd-x-15 pd-y-20">
+                      <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-12 pd-y-5">
+                          <p class="mg-b-0">In Succession Pool?</p>
+                          <div class="">
+                            <a class="btn btn-green tx-semibold">Yes</a>
+                            <a class="btn btn-light">No</a>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-12 pd-y-5">
+                          <p class="mg-b-0">Identify Successors?</p>
+                          <div class="">
+                            <a class="btn btn-light">Yes</a>
+                            <a class="btn btn-red tx-semibold">No</a>
+                          </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-4 col-12 pd-y-5">
+                          <p class="mg-b-0">Talent matrix position</p>
+                          <div class="">
+                            <a class="btn btn-light tx-dark tx-semibold">World Class Role Model</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="pd-t-20">
+                        <p class="mg-b-0">Nature of current role</p>
+                        <div class="">
+                          <a class="btn btn-green tx-semibold">Critical</a>
+                          <a class="btn btn-light">Not Critical</a>
+                          <a class="btn btn-light">Support</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card mg-b-20 mg-lg-b-25">
+                  <div class="card-header pd-y-10 pd-x-20 d-flex align-items-center justify-content-between bg-greyy">
+                    <p class="mg-b-0 tx-bold tx-16">Approval</p>
+
+                  </div>
+                  <div class="card-body pd-0">
+                    <div class="table-responsive">
+                      <table class="table table-hover table-striped mg-b-0">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="tx-uppercase tx-13 text-muted">Supervisor</th>
+                            <th scope="col" class="tx-uppercase tx-13 text-muted">Name</th>
+                            <th scope="col" class="tx-uppercase tx-13 text-muted">Signature</th>
+                            <th scope="col" class="tx-uppercase  tx-13 text-muted">Date</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>GGHR</td>
+                            <td>Effiong Adu</td>
+                            <td></td>
+                            <td>10th June, 2020</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-              </div>
+              
             </div>
           </div>
         </div>
