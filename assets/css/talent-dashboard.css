@@ -210,3 +210,7 @@ label.custom-control-label::after {
   font-weight: 400;
   cursor: pointer;
 }
+.fixed-modal {
+  max-height: 90vh;
+  overflow-y: auto;
+}
