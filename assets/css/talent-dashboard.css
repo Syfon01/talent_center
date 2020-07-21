@@ -214,3 +214,7 @@ label.custom-control-label::after {
   max-height: 90vh;
   overflow-y: auto;
 }
+
+.side-dash-header{
+  background-color: #424147!important;
+}
