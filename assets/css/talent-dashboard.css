@@ -133,3 +133,42 @@ color: #777777!important;
 color: #fff!important;
 background-color: #801010;
 }
+
+.list-inline-skills {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-inline-skills .list-inline-item {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.list-inline-skills .filter{
+  display: block;
+  background-color: #FFFFFF24;
+  border: 1px solid #707070;
+  color: #fff!important;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  padding-left: 8px;
+  padding-right: 8px;
+  color: #1b2e4b;
+  border-radius: 0.25rem;
+}
+
+.custom-control.custom-checkbox {
+  padding-left: 0;
+}
+
+label.custom-control-label {
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+label.custom-control-label::before,
+label.custom-control-label::after {
+  right: 0;
+  left: auto;
+}
