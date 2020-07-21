@@ -172,3 +172,12 @@ label.custom-control-label::after {
   right: 0;
   left: auto;
 }
+.custom-control-label::before{
+  background: transparent!important;
+}
+
+.custom-control-input:checked~.custom-control-label::before{
+  border-color: #148A6E;
+  background-color:#148A6E!important;
+
+}
