@@ -19,6 +19,8 @@
   <!-- DashForge CSS -->
   <link rel="stylesheet" href="./assets/css/dashforge.css">
   <link rel="stylesheet" href="./assets/css/talent-dashboard.css">
+   <link rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css" />
 
 
 
@@ -34,7 +36,7 @@
           <h1 class="mg-y-0 header-text">Talent Center</h1>
         </a>
       </div>
-      
+
       <div class="navbar-right">
         <div class="mg-l-20">
           <img src="./assets/img/uba.svg" alt="" srcset="">
@@ -47,46 +49,63 @@
   <div class="container mg-t-90">
     <div class="row">
       <div class="col-lg-3 col-xl-3 col-md-3 col-12">
-          <div class="d-flex justify-content-between bg-green pd-10">
-            <p class="tx-14 tx-bold tx-white my-0">All talents</p>
-            <p class="tx-14 tx-bold tx-white my-0">365 </p>
-          </div>
+        <div class="d-flex justify-content-between bg-green pd-10">
+          <p class="tx-14 tx-bold tx-white my-0">All talents</p>
+          <p class="tx-14 tx-bold tx-white my-0">365 </p>
+        </div>
 
-          <div class="card card-transparent mg-y-20">
-            <div class="card-header side-dash-header">
+        <div class="card card-transparent mg-y-20">
+          <div class="card-header side-dash-header">
+            <div class="d-flex justify-content-between">
             <p class="tx-14 tx-bold tx-white my-0">Filters</p>
-            </div>
-            <div class="card-body pd-0">
-                <form class="searchbar-form card-style-body">
-                  <div class="search-form">
-                    <input type="search" class="form-control input-background " placeholder="Search talents">
-                    <button class="btn" type="button"><i data-feather="search"></i></button>
-                  </div>
-                </form>
-                <div>
-                  <div class="bg-card-section card-style-body">
-                    <p class="tx-medium tx-14 mg-y-0 tx-white-8">Age(yrs)</p>
-                  </div>
-                  <div>
-                </div>
-                  filter
-                </div>
-                <div class="bg-card-section card-style-body">
-                  <p class="tx-medium tx-14 mg-y-0 tx-white-8">Years of Service (yrs)</p>
-                </div>
-
-                <div class="bg-card-section card-style-body">
-                  <p class="tx-medium tx-14 mg-y-0 tx-white-8">Qualifications</p>
-                </div>
-                <form class="searchbar-form card-style-body">
-                  <div class="search-form">
-                    <input type="search" class="form-control input-background " placeholder="Search">
-                    <button class="btn" type="button"><i data-feather="search"></i></button>
-                  </div>
-                </form>
-
+            
+              <p class="tx-14 close close-filter"> <span aria-hidden="true" class="close-btn">&times;</span> <span class="clear-filter tx-white-8">clear filter</span></p>
             </div>
           </div>
+          <div class="card-body pd-0">
+            <form class="searchbar-form card-style-body">
+              <div class="search-form">
+                <input type="search" class="form-control input-background " placeholder="Search talents">
+                <button class="btn" type="button"><i data-feather="search"></i></button>
+              </div>
+            </form>
+            <div>
+              <div class="bg-card-section card-style-body">
+                <p class="tx-medium tx-14 mg-y-0 tx-white-8">Age(yrs)</p>
+              </div>
+              <div class="card-style-body">
+                <input type="text" id="ranger" name="my_range" value="" />
+
+              </div>
+              </div>
+            <div>
+              <div class="bg-card-section card-style-body">
+                <p class="tx-medium tx-14 mg-y-0 tx-white-8">Years of Service (yrs)</p>
+              </div>
+              <div class="card-style-body">
+                <input type="text" class="js-range-slider" name="my_range" value="" />
+
+                <!-- <div class="text-center">
+                  <div class="w-100">
+                    <input type="range" class="custom-range slider" id="customRange11" min="0" max="100"
+                      >
+                  </div>
+                  <span class="font-weight-bold text-green mx-auto valueSpan2"></span>
+                </div> -->
+              </div>
+            </div>
+            <div class="bg-card-section card-style-body">
+              <p class="tx-medium tx-14 mg-y-0 tx-white-8">Qualifications</p>
+            </div>
+            <form class="searchbar-form card-style-body">
+              <div class="search-form">
+                <input type="search" class="form-control input-background " placeholder="Search">
+                <button class="btn" type="button"><i data-feather="search"></i></button>
+              </div>
+            </form>
+
+          </div>
+        </div>
 
 
       </div>
@@ -94,11 +113,11 @@
       <div class="col-lg-9 col-xl-9 col-md-9 col-12">
         <ul class="list-inline list-inline-skills">
           <li class="list-inline-item filter ">
-          <div class="custom-control custom-checkbox">
-            <input type="checkbox" class="custom-control-input" id="customCheck1">
-            <label class="custom-control-label" for="customCheck1">Executive director <span>(6)</span></label>
-          </div>
-        </li>
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="customCheck1">
+              <label class="custom-control-label" for="customCheck1">Executive director <span>(6)</span></label>
+            </div>
+          </li>
           <li class="list-inline-item filter">
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck2">
@@ -153,7 +172,7 @@
           </li>
         </ul>
         <div class="card master-card">
-          
+
           <!-- <div class="card-header side-dash-header">
             <h3 class="tx-white text-regular pd-l-10">All talents <span class="text-grey tx-16">(365)</span></h3>
           </div> -->
@@ -201,8 +220,7 @@
                   </div>
                 </div>
                 <div class="col-lg-6 col-xl-6 col-md-6 col-12 mg-y-10">
-                  <div class="card card-shadow" type="button" data-toggle="modal"
-                    data-target="#exampleModal">
+                  <div class="card card-shadow" type="button" data-toggle="modal" data-target="#exampleModal">
                     <div class="card-header dash-card-header">
                       <div class="row">
                         <div class="col-lg-2 col-3 pd-r-5">
@@ -288,9 +306,9 @@
                     <div class="card-header dash-card-header">
                       <div class="row">
                         <div class="col-lg-2 col-3 pd-r-5">
-                            <div class="avatar avatar-md">
-                              <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid rounded-circle" />
-                            </div>
+                          <div class="avatar avatar-md">
+                            <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid rounded-circle" />
+                          </div>
                         </div>
                         <div class="col-lg-10 col-9">
                           <p class="mg-b-0"><span class="tx-bold tx-16">Uzodimma, Samuel King</span> <span
@@ -330,9 +348,9 @@
                     <div class="card-header dash-card-header">
                       <div class="row">
                         <div class="col-lg-2 col-3 pd-r-5">
-                            <div class="avatar avatar-md">
-                              <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid rounded-circle" />
-                            </div>
+                          <div class="avatar avatar-md">
+                            <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid rounded-circle" />
+                          </div>
                         </div>
                         <div class="col-lg-10 col-9">
                           <p class="mg-b-0"><span class="tx-bold tx-16">Uzodimma, Samuel King</span> <span
@@ -407,10 +425,10 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
-        
+
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -421,7 +439,7 @@
                 <div class="row col-11">
                   <div class="col-lg-1 col-3 pd-r-5">
                     <div class="avatar avatar-md">
-                    <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid rounded-circle" />
+                      <img src="./assets/img/dashbord-pro.png" alt="" class="img-fluid rounded-circle" />
                     </div>
                   </div>
                   <div class="col-lg-11 col-9">
@@ -625,23 +643,46 @@
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>
       </div>
-      
+
     </div>
 
   </div>
 
- <script src="./lib/jquery/jquery.min.js"></script>
- <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
- <script src="./lib/feather-icons/feather.min.js"></script>
- <script src="./lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./lib/feather-icons/feather.min.js"></script>
+  <script src="./lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+  <script src="./assets/js/dashforge.js"></script>
+  <script>
+    $(document).ready(function () {
 
- <script src="./assets/js/dashforge.js"></script>
+      const $valueSpan = $('.valueSpan2');
+      const $value = $('#customRange11');
+      $valueSpan.html($value.val());
+      $value.on('input change', () => {
 
- </body>
+        $valueSpan.html($value.val());
+      });
+ $(".js-range-slider").ionRangeSlider();
 
- </html>
+ $("#ranger").ionRangeSlider({
+       type: "double",
+        min: 0,
+        max: 100,
+        from: 20,
+        to: 60,
+        skin: "round"
+    });
+    });
+    
+  </script>
+
+</body>
+
+</html>
