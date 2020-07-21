@@ -48,7 +48,7 @@
 
   <div class="container mg-t-90">
     <div class="row">
-      <div class="col-lg-3 col-xl-3 col-md-3 col-12">
+      <!-- <div class="col-lg-3 col-xl-3 col-md-3 col-12">
         <div class="d-flex justify-content-between bg-green pd-10">
           <p class="tx-14 tx-bold tx-white my-0">All talents</p>
           <p class="tx-14 tx-bold tx-white my-0">365 </p>
@@ -71,27 +71,21 @@
             </form>
             <div>
               <div class="bg-card-section card-style-body">
-                <p class="tx-medium tx-14 mg-y-0 tx-white-8">Age(yrs)</p>
+               
               </div>
-              <div class="card-style-body">
-                <input type="text" id="ranger" name="my_range" value="" />
-
-              </div>
-              </div>
-            <div>
               <div class="bg-card-section card-style-body">
                 <p class="tx-medium tx-14 mg-y-0 tx-white-8">Years of Service (yrs)</p>
               </div>
               <div class="card-style-body">
                 <input type="text" class="js-range-slider" name="my_range" value="" />
 
-                <!-- <div class="text-center">
+                <div class="text-center">
                   <div class="w-100">
                     <input type="range" class="custom-range slider" id="customRange11" min="0" max="100"
                       >
                   </div>
                   <span class="font-weight-bold text-green mx-auto valueSpan2"></span>
-                </div> -->
+                </div>
               </div>
             </div>
             <div class="bg-card-section card-style-body">
@@ -108,10 +102,10 @@
         </div>
 
 
-      </div>
+      </div> -->
 
-      <div class="col-lg-9 col-xl-9 col-md-9 col-12">
-        <ul class="list-inline list-inline-skills">
+      <div class="col-lg-12 col-xl-12 col-md-12 col-12">
+        <!-- <ul class="list-inline list-inline-skills">
           <li class="list-inline-item filter ">
             <div class="custom-control custom-checkbox">
               <input type="checkbox" class="custom-control-input" id="customCheck1">
@@ -170,13 +164,13 @@
               <label class="custom-control-label" for="customCheck9">Assistant General Manager <span>(9)</span></label>
             </div>
           </li>
-        </ul>
+        </ul> -->
         <div class="card master-card">
 
       <!-- new work  -->
 
           <div class="card-header side-dash-header">
-            <div class="row">
+            <div class="row pd-10">
               <div class="col-12 col-lg-6">
                 <h3 class="tx-white text-regular pd-l-10">All talents <span class="text-grey tx-16">(365)</span></h3>
               
@@ -197,8 +191,36 @@
             </div>
               </div>
             </div>
+            <div class="filter pd-l-10">
+              <div class="row pd-10">
+            
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12">
+                  <p class="tx-regular tx-14 mg-y-5 text-grey">Age(yrs)</p>
+                  <div>
+                    <input type="text" id="ranger" name="my_range" value="" />
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-3 col-xl-3 col-12">
+                  <p class="tx-regular tx-14 mg-y-5 text-grey">Years of Service (yrs)</p>
+                  <input type="text" class="js-range-slider" name="my_range" value="" />
+                </div>
+                <div class="col-md-12 col-lg-6 col-xl-6 col-12">
+                  <p class="tx-14 close close-filter"> <span aria-hidden="true" class="close-btn">&times;</span> <span
+                      class="clear-filter tx-grey">clear filter</span></p>
+            
+                  <p class="tx-regular tx-14 mg-y-5 text-grey">Qualifications</p>
+                  <select class="form-control custom-select select2">
+                    <option selected>Financial Risk Management</option>
+                    <option value="1">System Auditor</option>
+                    <option value="2">Project Manager</option>
+                    <option value="3">Business Analyst</option>
+                  </select>
+            
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-body card-style-body fixed-body">
+          <div class="card-body card-style-body fixed-body">             
             <div class="scroll-body">
               <div class="row pd-x-20">
                 <div class="col-lg-6 col-xl-6 col-md-6 col-12 mg-y-10">
@@ -695,6 +717,7 @@
         to: 60,
         skin: "round"
     });
+
     });
     
   </script>
