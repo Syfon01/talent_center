@@ -61,19 +61,20 @@ font-size: 0.8125rem!important;
   border-radius: 0.25rem;
 }
 .input-background{
-  background-color: transparent;
+  background-color: #686A6C;
 }
 .searchbar-form{
-  width: 70%;;
+  width: 100%;;
 }
 .search-form button{
   border: none;
+  background-color: #686A6C;
 }
 .form-control{
   border: none;
 }
 .bg-green{
-  background-color: #29868E;
+  background-color: #148A6E;
   border: 1px solid rgba(240, 232, 232, 0.541);
   border-radius: 5px;
 }
@@ -87,8 +88,10 @@ font-size: 0.8125rem!important;
   color: #BDC6CF;
 }
 .card-transparent{
-  background-color: transparent;
-  border: 1px solid #B7D2E58C;
+  background-color: rgba(66, 65, 71, 0.6);
+}
+.bg-card-section{
+  background-color: rgba(66, 65, 71, 1.0);
 }
 .master-card{
   border: 1px solid #b7d2e5b7!important;
@@ -97,8 +100,7 @@ font-size: 0.8125rem!important;
   background-color: #29868E;
 }
 .side-dash-header{
-  background-color: #424147;
-    /* border: 1px solid #B7D2E58C; */
+    border-bottom: 1px solid #D8E5EE;
 
 }
 .text-regular{
