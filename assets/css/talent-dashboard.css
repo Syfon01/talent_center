@@ -123,8 +123,8 @@ box-shadow: 0.1rem .15rem .35rem rgba(0, 0, 0, .2) !important;
 .bg-greyy{
   background-color: #DDDDDD;
 }
-.btn-green{
-  background-color: #108043;
+.btn-filter{
+  background-color: #ff4444;
   color: #fff!important;
 }
 .btn-light{
@@ -185,7 +185,7 @@ label.custom-control-label::after {
 }
 .irs--round .irs-handle{
   border: 1px solid #fff!important;
-  background-color:#148A6E !important;
+  background-color:#ff4444 !important;
   width: 15px!important;
   height: 15px!important;
   top: 31px!important;
@@ -193,12 +193,16 @@ label.custom-control-label::after {
 .irs--round .irs-from,
 .irs--round .irs-to,
 .irs--round .irs-single{
-  background-color:#148A6E !important;
+  background-color:#ff4444 !important;
 }
 .irs--round .irs-bar{
-    background-color:#148A6E !important;
+    background-color:#ff4444 !important;
 }
-
+.irs--round .irs-from:before,
+.irs--round .irs-to:before,
+.irs--round .irs-single:before{
+  border-top-color: #ff4444!important;
+}
 .close-btn{
   color:#F63C28;
   font-size: 18px;
@@ -219,8 +223,8 @@ label.custom-control-label::after {
   background-color: #424147!important;
 }
 
-.filter{
-  background-color: #f1f1f1!important;
+.filterr{
+  background-color: #F9F9F9 !important;
   box-shadow: 0 .12rem .25rem rgba(0, 0, 0, .15) !important;
 
 }
