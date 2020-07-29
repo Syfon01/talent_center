@@ -1,7 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
+
+body {
+  font-family: "Roboto",
+    sans-serif;
+  ;
+}
 .benefit-tab-link.active {
-  color: #C14242;
+  color: #000;
   font-size: 24px!important;
-  font-weight: 200;
+  font-weight: 300;
 }
 .benefit-tab-link{
   font-size: 24px !important;
@@ -75,8 +82,8 @@ font-weight: bold;
 .bg-grey{
   background-color: #EEEEEE;
 }
-.bg-grey1{
-  /* background-color: #F9F9F9; */
+.bg-grey-1{
+  background-color: #FAFBFC;
 }
 .content-space{
   padding-top: 0!important;
