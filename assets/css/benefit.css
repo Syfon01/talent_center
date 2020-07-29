@@ -220,3 +220,6 @@ font-weight: bold;
   color: #DE3618;
   padding: 4px;
 }
+.card-hover:hover{
+  box-shadow: 2px 3px 4px #a1a0a0;
+}

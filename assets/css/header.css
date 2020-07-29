@@ -29,3 +29,19 @@
 .head-text{
   color: #fff!important;
 }
+.logo-img{
+  max-width: 100%!important;
+}
+
+@media (max-width: 575.98px) {
+  .logo-img{
+    max-width: 30px!important;
+    margin-left: 2px!important;
+  }
+  .bene{
+    margin-left: 0px!important;
+  }
+  .img-div{
+    margin-left: 2px !important;
+  }
+}

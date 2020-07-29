@@ -28,22 +28,29 @@
 <body class="page-profile">
   <header class="navbar navbar-header navbar-header-fixed">
     <div class="container">
+    <a href="" id="mainMenuOpen" class="burger-menu"><i data-feather="menu"></i></a>
     <div class="navbar-brand">
-      <a href="/index.html" class="">
+      <a href="/dashboard.html" class="">
         <h1 class="tx-white mg-y-0 head-text">ESS</h1>
       </a>
     </div>
-    <div id="navbarMenu" class="navbar-menu-wrapper">
+      <div id="navbarMenu" class="navbar-menu-wrapper">
+        <div class="navbar-menu-header">
+          <a href="/dashboard.html" class="">
+            <h1 class="tx-white mg-y-0 head-text">ESS</h1>
+          </a>
+          <a id="mainMenuClose" href=""><i data-feather="x"></i></a>
+        </div>
       
-      <ul class="nav navbar-menu mr-auto">
+      <ul class="nav navbar-menu">
         <li class="nav-item "><a href="/dashboard.html" class="nav-link active "> Home</a></li>
         <li class="nav-item "><a href="/performance.html" class="nav-link"> Performance</a></li>
         <li class="nav-item  "><a href="/talent-center.html" class="nav-link">Talent center</li>
-        <li class="nav-item  "><a href="/benefit.html" class="nav-link ml-4">Benefits</li>
+        <li class="nav-item  "><a href="/benefit.html" class="nav-link ml-3 bene">Benefits</li>
       </ul>
     </div>
-    <div class="navbar-right">
-      
+
+    <div class="navbar-right">      
       <div class="dropdown dropdown-notification">
         <a href="" class="dropdown-link new-indicator" data-toggle="dropdown">
           <i data-feather="bell"></i>
@@ -109,14 +116,10 @@
           <a href="page-signin.html" class="dropdown-item"><i data-feather="log-out"></i>Sign Out</a>
         </div>
       </div>
-
-      <div class="mg-l-20">
-        <img src="./assets/img/uba.svg" alt="" srcset="">
+      <div class="mg-l-20 img-div">
+        <img src="./assets/img/uba.svg" alt="" class="logo-img">
       </div>
-
     </div>
-  
-
     </div>
   </header>
 
