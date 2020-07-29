@@ -209,3 +209,14 @@ font-weight: bold;
   color: #0C71BB;
   padding: 4px;
 }
+.card-decline{
+  background-color: #FBF3F0;
+  border-top: 2px solid #DE3618;
+
+}
+.flag-decline{
+  border-radius: 50%;
+  background-color: #FEAD9A;
+  color: #DE3618;
+  padding: 4px;
+}
