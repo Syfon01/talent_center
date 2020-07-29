@@ -160,7 +160,7 @@
                                   </div>
                                 </div>
                                 <div class="col-lg-4 col-xl-4 col-md-4 col-4">
-                                  <button class="btn btn-danger pd-5">
+                                  <button class="btn btn-danger pd-5" data-toggle="modal" data-target="#educationSubsidy">
                                     Request
                                   </button>
                                 </div>
@@ -398,59 +398,218 @@
               <div class="tab-pane fade show " id="manage" role="tabpanel" aria-labelledby="manage-tab">
                 <div class="pd-y-20">
                   <h4>Your Benefits</h4>
-                  <div class="table-responsive">
-                    <table class="table table-hover table-striped">
-                      <thead>
-                        <tr>
-                          <th scope="col" class=" tx-13 ">S/N</th>
-                          <th scope="col" class=" tx-13 ">Benefit Type</th>
-                          <th scope="col" class=" tx-13 ">Request</th>
-                          <th scope="col" class=" tx-13 ">Status</th>
-                          <th scope="col" class="tx-13 ">Date Created</th>
-                          <th scope="col" class="tx-13 ">Date Updated</th>
-                          <th scope="col" class="tx-13 ">Gross Balance</th>
-                          <th scope="col" class=" tx-13"></th>
 
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="table-font">1</td>
-                          <td class="table-font">Education Subsidy</td>
-                          <td class="table-font">N30000</td>
-                          <td class="table-font"><span class="btn-pending pd-y-7 pd-x-20">Pending</span></td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">N256100</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
-                        </tr>
-                        <tr>
-                          <td class="table-font">2</td>
-                          <td class="table-font">Club & Professional Subcription</td>
-                          <td class="table-font">N30000</td>
-                          <td class="table-font"><span class="btn-approve pd-y-7 pd-x-20">Approve</span></td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">N256100</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
-                        </tr>
-                        <tr>
-                          <td class="table-font">3</td>
-                          <td class="table-font">Travel Subsidy</td>
-                          <td class="table-font">N30000</td>
-                          <td class="table-font"><span class="btn-decline pd-y-7 pd-x-20">Pending</span></td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">N256100</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <ul class="nav  nav-line pd-x-0 pd-t-20" id="myTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link manage-tab-link active" id="pending-tab tab-font" data-toggle="tab"
+                        href="#pending" role="tab" aria-controls="pending" aria-selected="true">Pending <span>(12)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link manage-tab-link" id="approve-tab tab-font" data-toggle="tab" href="#approve"
+                        role="tab" aria-controls="approve" aria-selected="false">Approve <span>(38)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link manage-tab-link" id="decline-tab tab-font" data-toggle="tab" href="#decline"
+                        role="tab" aria-controls="decline" aria-selected="false">Decline <span>(4)</span></a>
+                    </li>
+                  </ul>
+                  <div class="tab-content bd bd-gray-300 bd-t-0  border-0" id="myTabContent">
+                    <div class="tab-pane fade show active" id="pending" role="tabpanel" aria-labelledby="pending-tab">
+                      <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col" class=" tx-13 ">S/N</th>
+                              <th scope="col" class=" tx-13 ">Employee name</th>
+                              <th scope="col" class=" tx-13 ">Grade</th>
+                              <th scope="col" class=" tx-13 ">Benefit type</th>
+                              <th scope="col" class=" tx-13 ">Request amount</th>
+                              <th scope="col" class="tx-13 ">Date created</th>
+                              <th scope="col" class=" tx-13"></th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="table-font">1</td>
+                              <td class="table-font">Adams Kuti</td>
+                              <td class="table-font">Deputy General Manager</td>
+                              <td class="table-font">Education Subsidy</td>
+                              <td class="table-font">₦300,000</td>
+                              <td class="table-font">30 Dec, 2021</td>
+                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5"
+                                  href="">View</a></td>
+                            </tr>
+                            <tr>
+                              <td class="table-font">2</td>
+                              <td class="table-font">Fela Kuti</td>
+                              <td class="table-font"> Manager</td>
+                              <td class="table-font">Education Subsidy</td>
+                              <td class="table-font">₦100,000</td>
+                              <td class="table-font">30 Dec, 2021</td>
+                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                    <div class="tab-pane fade show" id="approve" role="tabpanel" aria-labelledby="approve-tab">
+                      <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col" class=" tx-13 ">S/N</th>
+                              <th scope="col" class=" tx-13 ">Employee name</th>
+                              <th scope="col" class=" tx-13 ">Grade</th>
+                              <th scope="col" class=" tx-13 ">Benefit type</th>
+                              <th scope="col" class=" tx-13 ">Request amount</th>
+                              <th scope="col" class="tx-13 ">Date created</th>
+                              <th scope="col" class="tx-13 ">Date approved</th>
+                              <th scope="col" class="tx-13 ">Approved by</th>
+                              <th scope="col" class=" tx-13"></th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="table-font">1</td>
+                              <td class="table-font">Adams Kuti</td>
+                              <td class="table-font">Deputy General Manager</td>
+                              <td class="table-font">Education Subsidy</td>
+                              <td class="table-font">₦300,000</td>
+                              <td class="table-font">30 Nov, 2021</td>
+                              <td class="table-font">30 Dec, 2021</td>
+                              <td class="table-font">Uzo Samuel</td>
+                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
+                            </tr>
+                            <tr>
+                              <td class="table-font">2</td>
+                              <td class="table-font">Ngozi Kuti</td>
+                              <td class="table-font">Senior Manager</td>
+                              <td class="table-font">Travel Subsidy</td>
+                              <td class="table-font">₦200,000</td>
+                              <td class="table-font">12 Dec, 2021</td>
+                              <td class="table-font">30 Dec, 2021</td>
+                              <td class="table-font">James John</td>
+                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="tab-pane fade show" id="decline" role="tabpanel" aria-labelledby="decline-tab">
+                      <div class="table-responsive">
+                        <table class="table table-hover table-striped">
+                          <thead>
+                            <tr>
+                              <th scope="col" class=" tx-13 ">S/N</th>
+                              <th scope="col" class=" tx-13 ">Employee name</th>
+                              <th scope="col" class=" tx-13 ">Grade</th>
+                              <th scope="col" class=" tx-13 ">Benefit type</th>
+                              <th scope="col" class=" tx-13 ">Request amount</th>
+                              <th scope="col" class="tx-13 ">Date created</th>
+                              <th scope="col" class="tx-13 ">Date declined</th>
+                              <th scope="col" class="tx-13 ">Declined by</th>
+                              <th scope="col" class=" tx-13"></th>
+
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td class="table-font">1</td>
+                              <td class="table-font">Adams Kuti</td>
+                              <td class="table-font">Deputy General Manager</td>
+                              <td class="table-font">Education Subsidy</td>
+                              <td class="table-font">₦300,000</td>
+                              <td class="table-font">30 Nov, 2021</td>
+                              <td class="table-font">30 Dec, 2021</td>
+                              <td class="table-font">Uzo Samuel</td>
+                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
+                            </tr>
+                            <tr>
+                              <td class="table-font">2</td>
+                              <td class="table-font">Chris Kuti</td>
+                              <td class="table-font">General Manager</td>
+                              <td class="table-font">Travel Subsidy</td>
+                              <td class="table-font">₦300,000</td>
+                              <td class="table-font">30 Dec, 2021</td>
+                              <td class="table-font">30 Dec, 2021</td>
+                              <td class="table-font">Uzo Samuel</td>
+                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!--Education Subsidy Modal -->
+            <div class="modal fade" id="educationSubsidy" tabindex="-1" role="dialog" aria-labelledby="educationSubsidy"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header bg-grey">
+                    <h5 class="modal-title" id="educationSubsidy">Request education subsidy</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <form>
+                          <div class="form-group">
+                            <label for="formGroupExampleInput" class="d-block">Enter name of child</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                          <div class="form-group">
+                            <label for="formGroupExampleInput2" class="d-block">Name of school</label>
+                            <input type="text" class="form-control" >
+                          </div>
+                          
+                        </form>
+                      </div>
+                      <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                        <div class="item">
+                          <form data-validation="true" action="#" method="post" enctype="multipart/form-data">
+                            <div class="item-inner">
+                              <div class="item-content">
+                                <div class="image-upload"> <label style="cursor: pointer;" for="file_upload"> <img src="" alt=""
+                                      class="uploaded-image">
+                                    <div class="h-100">
+                                      <div>
+                                        <div class="cell"> <i data-feather="upload-cloud"></i>
+                                          <h5>Drag here or Click to upload</h5>
+                                        </div>
+                                      </div>
+                                    </div>
+                                     <input data-required="image" type="file" name="image_name" id="file_upload"
+                                      class="image-input" data-traget-resolution="image_resolution" value="">
+                                  </label> </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+
           <!-- <div class="col-xl-3 bg-grey pd-y-30">
             <div class="card">
               <div class="card-header cardd">
@@ -566,6 +725,9 @@
    <script src="./lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
    <script src="./assets/js/dashforge.js"></script>
+   <script>
+    $('.file-upload').file_upload();
+   </script>
    </body>
 
    </html>

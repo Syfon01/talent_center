@@ -13,6 +13,7 @@ body {
 .benefit-tab-link{
   font-size: 24px !important;
   font-weight: 200;
+  color: #333333;
 }
 
 .nav-line .benefit-tab-link.active::after {
@@ -90,4 +91,76 @@ font-weight: bold;
 }
 .tx-normal{
   font-weight: 300;
+}
+
+.manage-tab-link.active {
+  color: #000;
+  font-weight: 700;
+}
+
+.manage-tab-link {
+  font-weight: 00;
+  color: #777777;
+}
+
+.nav-line .manage-tab-link.active::after {
+  background-color: #C14242;
+  font-weight: 200;
+
+}
+
+.manage-tab-link:hover {
+  color: #000;
+}
+
+.image-upload {
+  width: 100%;
+  border: 1px dashed #ddd;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  color: #666;
+  overflow: hidden
+}
+
+.item form img {
+  margin-bottom: 20px;
+  width: auto;
+  height: auto;
+  max-height: 400px;
+  width: auto;
+  border-radius: 5px;
+  overflow: hidden
+}
+
+.image-upload img {
+  height: 100% !important;
+  width: auto !important;
+  border-radius: 0px;
+  margin: 0 auto
+}
+
+.image-upload i {
+  font-size: 6em;
+  color: #ccc
+}
+
+.image-upload input {
+  cursor: pointer;
+  opacity: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0
+}
+
+.item input {
+  height: 43px;
+  line-height: 43px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 20px
 }
