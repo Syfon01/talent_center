@@ -1,0 +1,86 @@
+.benefit-tab-link.active {
+  color: #C14242;
+  font-size: 24px!important;
+  font-weight: 200;
+}
+.benefit-tab-link{
+  font-size: 24px !important;
+  font-weight: 200;
+}
+
+.nav-line .benefit-tab-link.active::after {
+  background-color: #C14242;
+  font-size: 24px !important;
+  font-weight: 200;
+
+}
+
+.benefit-tab-link:hover {
+  color: #C14242;
+}
+.btn-view {
+  border: 2px solid #C5D9E8;
+  color: #E00E00;
+  font-weight: bold;
+}
+
+.text-muted {
+  color: #777777 !important;
+}
+
+.tx-16 {
+  font-size: 1rem !important;
+}
+
+.tx-14 {
+  font-size: 0.875rem !important;
+}
+
+.tx-13 {
+  font-size: 0.8125rem !important;
+}
+
+.tx-12 {
+  font-size: 0.75rem !important;
+}
+.progress-dark{
+  background-color: #3F536E!important;
+}
+.btn-pending{
+  border-radius: 50px;
+background-color: #EEEEEE;
+color: #333333;
+font-weight: bold;
+}
+.btn-decline {
+  border-radius: 50px;
+  background-color: #E9998A;
+  color: #fff;
+  font-weight: bold;
+}
+.btn-approve {
+  border-radius: 50px;
+  background-color: #86B49B;
+  color: #fff;
+  font-weight: bold;
+}
+
+.cardd{
+  padding: 10px 10px!important;
+}
+
+.table-font{
+  font-size: 0.8rem !important;
+}
+.bg-grey{
+  background-color: #EEEEEE;
+}
+.bg-grey1{
+  /* background-color: #F9F9F9; */
+}
+.content-space{
+  padding-top: 0!important;
+}
+.tx-normal{
+  font-weight: 300;
+}
