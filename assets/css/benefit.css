@@ -223,3 +223,11 @@ font-weight: bold;
 .card-hover:hover{
   box-shadow: 2px 3px 4px #a1a0a0;
 }
+.tb td{
+  font-size: 0.81rem!important;
+}
+.btn-declined{
+  background-color: #DD6B55;
+  color: #fff;
+  font-weight: 500;
+}

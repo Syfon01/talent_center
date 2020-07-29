@@ -280,7 +280,8 @@
                               <td class="table-font">30 Dec, 2021</td>
                               <td class="table-font">30 Dec, 2021</td>
                               <td class="table-font">N256100</td>
-                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="">View</a></td>
+                              <td class="table-font"><a class="btn btn-view pd-x-20 pd-y-5" href="" data-toggle="modal"
+                                  data-target="#requestModal">View</a></td>
                             </tr>
                             <tr>
                               <td class="table-font">3</td>
@@ -564,7 +565,6 @@
                         </table>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>
@@ -947,7 +947,7 @@
 
                   <div class="row">
                     <div class="col-lg-6 col-md-6 col-xl-6 col-12">
-                      <table class="table table-striped">
+                      <table class="table table-striped tb">
                         
                         <tbody>
                           <tr>
@@ -1053,7 +1053,7 @@
 
                       <div class="row">
                         <div class="col-lg-6 col-md-6 col-xl-6 col-12">
-                          <table class="table table-striped">
+                          <table class="table table-striped tb">
 
                             <tbody>
                               <tr>
@@ -1104,6 +1104,134 @@
                   </div>
                 </div>
               </div>
+
+                <!--request Modal -->
+                <div class="modal fade" id="requestModal" tabindex="-1" role="dialog" aria-labelledby="requestModal"
+                  aria-hidden="true">
+                  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header bg-grey">
+                        <h5 class="modal-title" id="requestModal">View</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="row">
+                          <div class="col-lg-6 col-md-12 col-12 col-xl-6">
+                            <div class="row">
+                              <div class="col-3 col-lg-3"> 
+                              <img src="./assets/img/profile.png" alt="" class="img-fluid">
+                              </div>
+                              <div class="col-9 col-lg-9">
+                                <p class="pd-t-12"><span class="tx-bold">Adams Kuti </span><br />
+                                  <span>A20292</span>
+                                </p>
+                              </div>                             
+                            </div>
+                            <hr/>
+                            <table class="table table-striped tb">
+                              <tbody>
+                                <tr>
+                                  <td class="text-muted">Grade</td>
+                                  <td class="tx-bold tx-right">Deputy General Manager</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Employment date</td>
+                                  <td class="tx-bold tx-right">12 July 2020</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Cost code</td>
+                                  <td class="tx-right">SU28103</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Naira account details</td>
+                                  <td class="tx-bold tx-right">UBA, 2308848239 <span class="mg-l-2 copy"><i
+                                        data-feather="copy" class="copy-icon"></i></span></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Dom account number</td>
+                                  <td class="tx-bold tx-right">UBA, 3483338928 <span class="mg-l-2 copy"><i
+                                        data-feather="copy" class="copy-icon"></i></span></td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">BVN number</td>
+                                  <td class="tx-right tx-bold">2308849239<span class="mg-l-10 copy"><i
+                                        data-feather="copy" class="copy-icon"></i></span></td>
+                                </tr>
+
+                              </tbody>
+                            </table>
+
+                          </div>
+                          <div class="col-lg-6 col-xl-6 col-md-12 col-12">
+                            <div class="d-flex justify-content-between bg-grey-1 pd-y-10 pd-x-5">
+                              <p class="tx-bold mg-y-0 tx-16">REQUEST:EDUCATION SUBSIDY</p>
+                              <div>
+                                <img src="./assets/img/Benefits/book-small.png" alt="" class="img-fluid">
+                              </div>
+                            </div>
+                            <label for="" class="mg-t-10 mg-b-0 text-muted">Beneficiary details</label>
+                            <div class="d-flex justify-content-between mg-y-10">
+                              <div>
+                                <h5 class="mg-b-1">Isaac Uzodimma</h5>
+                                <p class="tx-12 mg-y-0">Our Lady & St. Francis Catholic College, Lagos</p>
+                              </div>
+                              <div>
+                                <button class="btn btn-receipt">View receipt</button>
+                              </div>
+                            </div>
+                            <div class="d-flex justify-content-between mg-y-10">
+                              <div>
+                                <h5 class="mg-b-1">Rebecca Uzodimma</h5>
+                                <p class="tx-12 mg-y-0">Queens College, Lagos</p>
+                              </div>
+                              <div>
+                                <button class="btn btn-receipt">View receipt</button>
+                              </div>
+                            </div>
+                            <table class="table table-striped tb">
+                              <tbody>
+                                <tr>
+                                  <td class="text-muted">Requested amount</td>
+                                  <td class="tx-bold tx-right"><span>($85)</span> ₦40,000</td>
+
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Date requested</td>
+                                  <td class="tx-bold tx-right">12 July 2020</td>
+
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Date updated</td>
+                                  <td class="tx-right">-</td>
+                                </tr>
+                                <tr>
+                                  <td class="text-muted">Preferred payment mode</td>
+                                  <td class="tx-bold tx-right">Credit to account</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </div>
+                          
+                        
+                      </div>
+                      <div class="row pd-20">
+                        <div class="col-md-6">
+                          <button type="button" class="btn btn-declined  pd-x-30">Decline</button>
+                        </div>
+                        <div class="col-md-6">
+                        <div class="d-flex justify-content-end bd-0">
+                          <button type="button" class="btn btn-cancel mg-r-5" data-dismiss="modal">Cancel</button>
+                          <button type="button" class="btn btn-submit pd-x-30">Approve</button>
+                        </div>
+                        </div>
+                        </div>
+                      </div>
+                      
+                  </div>
+                </div>
           </div>
 
 
