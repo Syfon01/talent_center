@@ -193,9 +193,20 @@ h6 {
     font-weight: 500;
   border: 2px solid #C5D9E8;
 }
+.view-manager-btn:hover {
+  color: #33333398;
+  font-weight: 500;
+  border: 2px solid #C5D9E8;
+}
 .conduct-self-btn{
   color: #fff;
   background-color: #333333;
+  font-weight: 500;
+
+}
+.conduct-self-btn:hover {
+  color: #fff;
+  background-color: #050505;
   font-weight: 500;
 
 }
