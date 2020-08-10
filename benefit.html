@@ -141,7 +141,7 @@
               <div class="tab-pane fade show active" id="benefits" role="tabpanel" aria-labelledby="benefits-tab">
                <div class="row">
                  <!-- check this for side bar -->
-                 <div class="col-xl-3 bg-grey pd-y-10">
+                 <div class="col-xl-3 bg-grey pd-y-10 fixed-cardd">
                    <div class="card fixed-card pd-b-20">
                      <div class="card-header cardd">
                        <div class="d-flex justify-content-between">
@@ -584,11 +584,16 @@
                   </div>
                   <div class="modal-body">
                     <div class="row">
-                      <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
+                      <div class="col-lg-6 col-xl-5 col-md-6 col-sm-12">
                         <form>
                           <div class="form-group">
                             <label for="formGroupExampleInput" class="d-block">Enter name of child</label>
-                            <input type="text" class="form-control" >
+                            <select class="custom-select">
+                              <option selected>Select Dependants</option>
+                              <option value="1">Chris</option>
+                              <option value="2">Olumide</option>
+                              <option value="3">Trump</option>
+                            </select>
                           </div>
                           <div class="form-group">
                             <label for="formGroupExampleInput2" class="d-block">Name of school</label>
@@ -597,6 +602,7 @@
                           
                         </form>
                       </div>
+                      <div class="col-xl-1"></div>
                       <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
                         <d class="d-flex justify-content-between">
                           <label for="" class="mg-y-0 tdd-14">Upload receipt/invoice</label>
@@ -625,12 +631,26 @@
 
                       </div>
                     </div>
-                    <a href="" class="add-child"><span><i data-feather="plus"></i></span>Add another child</a>
                     <hr/>
                     <div class="row ">
                       <div class="col-12 col-md-5 col-lg-5 col-xl-5 mg-t-10">
+                        <div class="mg-b-15">
+                         <label for="amount" class="d-block">Enter amount spent</label>
+                        <div class="input-group">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-outline-light dropdown-toggle btn-grey" type="button"
+                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#8358;</button>
+                            <div class="dropdown-menu tx-13">
+                              <a class="dropdown-item" href="#">&#8358;</a>
+                              <a class="dropdown-item" href="#"> &#36;</a>
+                              <a class="dropdown-item" href="#"> &euro;</a>
+                            </div>
+                          </div>
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                        </div>
+                      </div>
                         <div class="card pd-10 card-grey">
-                          <label for="" class="mg-y-0 tx-14">What is your preferred payment mode?</label>
+                          <label for="" class="mg-y-0 tx-14">Mode of payment?</label>
                           <div class="d-flex justify-content-between">
                             <div class="card pd-10">
                               <div class="custom-control custom-radio">
@@ -652,18 +672,7 @@
                       </div>
                       <div class="col-lg-3 col-xl-3 col-md-3"></div>
                       <div class="col-lg-4 col-xl-4 col-md-4 col-12 mg-t-10">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <button class="btn btn-outline-light dropdown-toggle btn-grey" type="button" data-toggle="dropdown"
-                              aria-haspopup="true" aria-expanded="false">&#8358;</button>
-                            <div class="dropdown-menu tx-13">
-                              <a class="dropdown-item" href="#">&#8358;</a>
-                              <a class="dropdown-item" href="#"> &#36;</a>
-                              <a class="dropdown-item" href="#"> &euro;</a>
-                            </div>
-                          </div>
-                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
-                        </div>
+                        
                       </div>
                     </div>
                   </div>
