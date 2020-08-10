@@ -249,3 +249,25 @@ font-weight: bold;
 .edu-font{
   font-size:18px!important;
 }
+/* .fixed-card{
+   max-height: 70vh;
+   width: 12.25rem;
+   position: fixed;
+   z-index: 1;
+   left: auto !important;
+   right: inherit !important;
+   overflow-y: scroll;
+
+} */
+
+.fixed-card {
+  max-height: 100vh;
+  overflow-y: scroll;
+height: 80Vh;
+}
+@media (max-width: 575.98px) {
+  .fixed-card {
+    height: 100vh;
+    overflow-y: hidden;
+  }
+}
