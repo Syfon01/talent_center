@@ -695,7 +695,7 @@
                   <div class="modal-body">
                     <div class="row">
                      
-                      <div class="col-lg-7 col-xl-7 col-md-12 col-sm-12">
+                      <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12">
                         <form>
                           <div class="form-group">
                             <label for="formGroupExampleInput" class="d-block">Enter name of club/professional body</label>
@@ -729,12 +729,26 @@
 
                       </div>
                     </div>
-                    <a href="" class="add-child"><span><i data-feather="plus"></i></span>Add another child</a>
                     <hr />
                     <div class="row ">
-                      <div class="col-12 col-md-5 col-lg-5 col-xl-5 mg-t-10">
+                      <div class="col-12 col-md-5 col-lg-5 col-xl-5 mg-t-5">
+                        <div class="mg-b-15">
+                          <label for="amount" class="d-block">Enter amount spent</label>
+                          <div class="input-group">
+                            <div class="input-group-prepend">
+                              <button class="btn btn-outline-light dropdown-toggle btn-grey" type="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#8358;</button>
+                              <div class="dropdown-menu tx-13">
+                                <a class="dropdown-item" href="#">&#8358;</a>
+                                <a class="dropdown-item" href="#"> &#36;</a>
+                                <a class="dropdown-item" href="#"> &euro;</a>
+                              </div>
+                            </div>
+                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          </div>
+                        </div>
                         <div class="card pd-10 card-grey">
-                          <label for="" class="mg-y-0 tx-14">What is your preferred payment mode?</label>
+                          <label for="" class="mg-y-0 tx-14">Mode of payment?</label>
                           <div class="d-flex justify-content-between">
                             <div class="card pd-10">
                               <div class="custom-control custom-radio">
@@ -748,25 +762,7 @@
                                 <label class="custom-control-label mg-y-0" for="customRadio2">Draft</label>
                               </div>
                             </div>
-
                           </div>
-
-                        </div>
-
-                      </div>
-                      <div class="col-lg-3 col-xl-3 col-md-3"></div>
-                      <div class="col-lg-4 col-xl-4 col-md-4 col-12 mg-t-10">
-                        <div class="input-group">
-                          <div class="input-group-prepend">
-                            <button class="btn btn-outline-light dropdown-toggle btn-grey" type="button"
-                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&#8358;</button>
-                            <div class="dropdown-menu tx-13">
-                              <a class="dropdown-item" href="#">&#8358;</a>
-                              <a class="dropdown-item" href="#"> &#36;</a>
-                              <a class="dropdown-item" href="#"> &euro;</a>
-                            </div>
-                          </div>
-                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
                         </div>
                       </div>
                     </div>
@@ -804,6 +800,18 @@
                                 <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
                                 <label class="custom-control-label mg-y-0" for="customRadio3">With family?</label>
                               </div>
+
+                              <!-- *****************************************************************************
+                                if checkbox is click, uncomment this line
+                                **********************************************************************************
+                               -->
+
+                                <!-- <select class="custom-select">
+                                  <option selected>Select Dependants</option>
+                                  <option value="1">Chris</option>
+                                  <option value="2">Olumide</option>
+                                  <option value="3">Trump</option>
+                                </select> -->
                             </div>
                           </div>
                         </form>
