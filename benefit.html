@@ -182,11 +182,11 @@
 
                      <div class="summary mt-4">
                        <div class="d-flex justify-content-between bg-grey-1 pd-10">
-                         <p class="tx-bold mg-y-0 tx-12">CLUB & PROFESSIONAL <br/>SUBSCRIPTION</p>
+                         <p class="tx-bold mg-y-0 tx-12">CLUB & PROFESSIONAL SUBSCRIPTION</p>
                          <div>
                            <img src="./assets/img/Benefits/card-small.png" alt="" class="img-fluid">
                          </div>
-                       </div>
+                       </div>  
                        <div class="card-body cardd bd-b">
                          <div class="d-flex justify-content-between">
                            <p class="tx-13 tx-bold text-muted mg-y-0">Net entitlement</p>
@@ -604,16 +604,17 @@
                       </div>
                       <div class="col-xl-1"></div>
                       <div class="col-lg-6 col-xl-6 col-md-6 col-sm-12">
-                        <d class="d-flex justify-content-between">
+                        <div class="d-flex justify-content-between">
                           <label for="" class="mg-y-0 tdd-14">Upload receipt/invoice</label>
                           <label for="" class="mg-y-0 tx-13 text-muted">PDF,PNG,JPG</label>
-                        </d>
-                        <div class="item">
+                        </div>
+                        <!-- <div class="item">
+                          </div>
                           <form data-validation="true" action="#" method="post" enctype="multipart/form-data">
                             <div class="item-inner">
                               <div class="item-content">
-                                <div class="image-upload"> <label style="cursor: pointer;" for="file_upload"> <img src="" alt=""
-                                      class="uploaded-image">
+                                <div class="image-upload"> 
+                                  <label style="cursor: pointer;" for="file_upload"> 
                                     <div class="h-100">
                                       <div>
                                         <div class="cell"> <i data-feather="upload-cloud"></i>
@@ -621,16 +622,25 @@
                                         </div>
                                       </div>
                                     </div>
-                                     <input data-required="image" type="file" name="image_name" id="file_upload"
-                                      class="image-input" data-traget-resolution="image_resolution" value="">
-                                  </label> </div>
+                                    
+                                  </label> 
+                                </div>
+                              </div>
+                            </div>
+                          </form> -->
+                          <form action="" class="form-drop">
+                            <div class="drop-zone pd-20">
+                              <div class="cell"> 
+                                <div class="drop-zone__prompt">
+                                  <i data-feather="upload-cloud"></i> 
+                                  <h5 class="pd-y-20">Drop file here or click to upload</h5>
+                                </div>
+                                <input type="file" name="myFile" class="drop-zone__input">
                               </div>
                             </div>
                           </form>
-                        </div>
-
                       </div>
-                    </div>
+                      </div>
                     <hr/>
                     <div class="row ">
                       <div class="col-12 col-md-5 col-lg-5 col-xl-5 mg-t-10">
@@ -1362,6 +1372,79 @@
    <script src="./lib/perfect-scrollbar/perfect-scrollbar.min.js"></script>
 
    <script src="./assets/js/dashforge.js"></script>
+    <script>
+      document.querySelectorAll(".drop-zone__input").forEach((inputElement) => {
+          const dropZoneElement = inputElement.closest(".drop-zone");
+
+          dropZoneElement.addEventListener("click", (e) => {
+            inputElement.click();
+          });
+
+          inputElement.addEventListener("change", (e) => {
+            if (inputElement.files.length) {
+              updateThumbnail(dropZoneElement, inputElement.files[0]);
+            }
+          });
+
+          dropZoneElement.addEventListener("dragover", (e) => {
+            e.preventDefault();
+            dropZoneElement.classList.add("drop-zone--over");
+          });
+
+          ["dragleave", "dragend"].forEach((type) => {
+            dropZoneElement.addEventListener(type, (e) => {
+              dropZoneElement.classList.remove("drop-zone--over");
+            });
+          });
+
+          dropZoneElement.addEventListener("drop", (e) => {
+            e.preventDefault();
+
+            if (e.dataTransfer.files.length) {
+              inputElement.files = e.dataTransfer.files;
+              updateThumbnail(dropZoneElement, e.dataTransfer.files[0]);
+            }
+
+            dropZoneElement.classList.remove("drop-zone--over");
+          });
+        });
+
+        /**
+         * Updates the thumbnail on a drop zone element.
+         *
+         * @param {HTMLElement} dropZoneElement
+         * @param {File} file
+         */
+        function updateThumbnail(dropZoneElement, file) {
+          let thumbnailElement = dropZoneElement.querySelector(".drop-zone__thumb");
+
+          // First time - remove the prompt
+          if (dropZoneElement.querySelector(".drop-zone__prompt")) {
+            dropZoneElement.querySelector(".drop-zone__prompt").remove();
+          }
+
+          // First time - there is no thumbnail element, so lets create it
+          if (!thumbnailElement) {
+            thumbnailElement = document.createElement("div");
+            thumbnailElement.classList.add("drop-zone__thumb");
+            dropZoneElement.appendChild(thumbnailElement);
+          }
+
+          thumbnailElement.dataset.label = file.name;
+
+          // Show thumbnail for image files
+          if (file.type.startsWith("image/")) {
+            const reader = new FileReader();
+
+            reader.readAsDataURL(file);
+            reader.onload = () => {
+              thumbnailElement.style.backgroundImage = `url('${reader.result}')`;
+            };
+          } else {
+            thumbnailElement.style.backgroundImage = null;
+          }
+        }
+</script>
    
    </body>
 
