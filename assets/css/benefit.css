@@ -116,56 +116,7 @@ font-weight: bold;
   color: #000;
 }
 
-.image-upload {
-  width: 100%;
-  border: 1px dashed #ddd;
-  border-radius: 5px;
-  position: relative;
-  text-align: center;
-  color: #666;
-  overflow: hidden
-}
 
-.item form img {
-  margin-bottom: 20px;
-  width: auto;
-  height: auto;
-  max-height: 400px;
-  width: auto;
-  border-radius: 5px;
-  overflow: hidden
-}
-
-.image-upload img {
-  height: 100% !important;
-  width: auto !important;
-  border-radius: 0px;
-  margin: 0 auto
-}
-
-.image-upload i {
-  font-size: 6em;
-  color: #ccc
-}
-
-.image-upload input {
-  cursor: pointer;
-  opacity: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 10;
-  position: absolute;
-  top: 0;
-  left: 0
-}
-
-.item input {
-  height: 43px;
-  line-height: 43px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 20px
-}
 .add-child{
   color: #358ED7!important;
   font-weight: 600;
@@ -279,7 +230,8 @@ height: 80Vh;
   position: relative;
   text-align: center;
   color: #666;
-  overflow: hidden
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .drop-zone--over {
@@ -314,4 +266,7 @@ height: 80Vh;
 }
 .form-drop{
   height: 100%;
+}
+.dropping{
+  height: 10rem!important;
 }
