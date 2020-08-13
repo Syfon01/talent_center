@@ -3,7 +3,7 @@
 body {
   font-family: "Roboto",
     sans-serif;
-  ;
+  
 }
 
 h1,
@@ -71,6 +71,7 @@ h6 {
 
 .performance-bg {
   background: #F9F9F9;
+  min-height: 100vh;
 }
 
 .tx-gray-500 {
@@ -209,4 +210,33 @@ h6 {
   background-color: #050505;
   font-weight: 500;
 
+}
+
+/* =================================================================================
+ 360 Assessment style
+ ============================================================================ */
+.footer-link{
+  color: #2C405A;
+  font-weight: 600;
+}
+.footer-link:hover{
+background-color: #eeeeee;
+color: #2C405A;
+}
+.card-360{
+  padding: 15px!important;
+}
+.footer-appriasal{
+background-color: #eeeeee;
+color: #2C405A;
+font-weight: 600;
+}
+.footer-appriasal-complete{
+  cursor: default;
+}
+@media (max-width: 576px) {
+  .custom-row {
+    display: inline-block !important;
+
+  }
 }
