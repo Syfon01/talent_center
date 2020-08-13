@@ -221,7 +221,7 @@ h6 {
 }
 .footer-link:hover{
 background-color: #eeeeee;
-color: #2C405A;
+color: #ff4444;
 }
 .card-360{
   padding: 15px!important;
@@ -230,6 +230,11 @@ color: #2C405A;
 background-color: #eeeeee;
 color: #2C405A;
 font-weight: 600;
+}
+.footer-appriasal:hover {
+  background-color: #eeeeee;
+  color: #ff4444;
+  font-weight: 600;
 }
 .footer-appriasal-complete{
   cursor: default;
@@ -258,4 +263,8 @@ font-weight: 600;
 }
 .check-icon{
   background-color:#81B885;
+}
+.sub{
+  font-weight: 400!important;
+  font-size: 18px!important;
 }
