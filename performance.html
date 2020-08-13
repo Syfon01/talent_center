@@ -816,7 +816,7 @@
                 </div>
 
 
-                <!-- onclick of continue button  -->
+                <!-- onclick of continue button for peer  -->
                 <p class="tx-bold tx-danger">On click of continue for peer appraisal</p>
                 <div>
                   <div class="row">
@@ -897,6 +897,88 @@
                     </div>
                   </div>
                 </div>
+
+                 <p class="tx-bold tx-danger">On click of continue for peer appraisal</p>
+                 <div>
+                   <div class="row">
+                     <span class="mg-l-15 mg-r-10">
+                       <i data-feather="arrow-left-circle"></i>
+                     </span>
+                     <p class="tx-bold pd-t-5">Go back</p>
+                   </div>
+
+                   <h2 class="tx-normal">Self & Peer Listing <span>34</span></h2>
+                   <hr class="mt-1" />
+                   <div>
+                     <div class="row">
+                       <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                         <div class="card">
+                           <div class="card-body card-360">
+                             <div class="d-flex justify-content-between">
+                               <div>
+                                 <img src="./assets/img/pro-3.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                               </div>
+                               <div>
+                                 <p class="tx-bold mg-b-0">Chukwuemeka Uzodinma O.</p>
+                                 <p class="text-muted tx-11 mg-t-0">Product Vision and Development Specia...</p>
+                               </div>
+                             </div>
+                           </div>
+                           <a href="" class="footer-appriasal tx-center" data-toggle="modal"
+                             data-target="#selfAppraisal">
+                             <div class="card-footer">
+                               Start Self Appraisal
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+
+                       <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                         <div class="card">
+                           <div class="card-body card-360">
+                             <div class="d-flex justify-content-between">
+                               <div>
+                                 <img src="./assets/img/pro-3.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                               </div>
+                               <div>
+                                 <p class="tx-bold mg-b-0">Chukwuemeka Uzodinma O.</p>
+                                 <p class="text-muted tx-11 mg-t-0">Product Vision and Development Specia...</p>
+                               </div>
+                             </div>
+                           </div>
+                           <a href="" class="footer-appriasal-complete tx-center text-muted" disabled>
+                             <div class="card-footer">
+                               Self Appraisal Complete
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+
+                       <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                         <div class="card">
+                           <div class="card-body card-360">
+                             <div class="d-flex justify-content-between">
+                               <div>
+                                 <img src="./assets/img/pro-3.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                               </div>
+                               <div>
+                                 <p class="tx-bold mg-b-0">Chukwuemeka Uzodinma O.</p>
+                                 <p class="text-muted tx-11 mg-t-0">Product Vision and Development Specia...</p>
+                               </div>
+                             </div>
+                           </div>
+                           <a href="" class="footer-appriasal tx-center" data-toggle="modal"
+                             data-target="#selfAppraisal">
+                             <div class="card-footer">
+                               Start Self Appraisal
+                             </div>
+                           </a>
+                         </div>
+                       </div>
+
+                     </div>
+                   </div>
+                 </div>
               </div>
 
 
@@ -905,17 +987,18 @@
               ====================================================
               -->
               <!-- Modal -->
-              <div class="modal fade" id="selfAppraisal" tabindex="-1" role="dialog" aria-labelledby="selfAppraisalLabel"
+              <div class="modal fade" id="selfAppraisal" tabindex="-1" role="dialog"
+                aria-labelledby="selfAppraisalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
+                  <div class="modal-content modal-hidden">
+                    <div class="modal-header bg-greyy">
                       <h5 class="modal-title" id="selfAppraisalLabel">Make Assessment</h5>
                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                       </button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body fixed-modal">
                       <div class="col-xl-10 col-lg-12 col-12">
                         <div class="bd-b pd-y-10">
                           <h5>1. General Comment on Core Values</h5>
@@ -1211,12 +1294,325 @@
                       </div>
                     </div>
                     <div class="modal-footer">
-                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
-                      <button type="button" class="btn btn-primary">Submit</button>
+                      <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-primary pd-x-40">Submit</button>
                     </div>
                   </div>
                 </div>
               </div>
+
+               <!-- ==============================================
+                              Direct appraisal modal
+              ====================================================
+              -->
+               <!-- Modal -->
+               <div class="modal fade" id="directAppraisal" tabindex="-1" role="dialog"
+                 aria-labelledby="directAppraisalLabel" aria-hidden="true">
+                 <div class="modal-dialog modal-lg" role="document">
+                   <div class="modal-content modal-hidden">
+                     <div class="modal-header bg-greyy">
+                       <h5 class="modal-title" id="directAppraisalLabel">Make Assessment</h5>
+                       <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                         <span aria-hidden="true">&times;</span>
+                       </button>
+                     </div>
+                     <div class="modal-body fixed-modal">
+                       <div class="col-xl-10 col-lg-12 col-12">
+                         <div class="bd-b pd-y-10">
+                           <h5>1. General Comment on Core Values</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                 checked>
+                               <label class="custom-control-label" for="GenConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSome" name="customRadio" class="custom-control-input" checked>
+                               <label class="custom-control-label" for="GenSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenNever" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>2. Owns The Task</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="OwnConsistent" name="customRadio2" class="custom-control-input">
+                               <label class="custom-control-label" for="OwnConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="OwnMost" name="customRadio2" class="custom-control-input">
+                               <label class="custom-control-label" for="OwnMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSome" name="customRadio2" class="custom-control-input">
+                               <label class="custom-control-label" for="OwnSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSeldom" name="customRadio2" class="custom-control-input">
+                               <label class="custom-control-label" for="OwnSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenNever" name="customRadio2" class="custom-control-input">
+                               <label class="custom-control-label" for="OwnNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>3. Goes The Extra Mile, Solve Problems</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GoesConsistent" name="customRadio3" class="custom-control-input">
+                               <label class="custom-control-label" for="GoesConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GoesMost" name="customRadio3" class="custom-control-input">
+                               <label class="custom-control-label" for="GoesMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GoesSome" name="customRadio3" class="custom-control-input">
+                               <label class="custom-control-label" for="GoesSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GoesSeldom" name="customRadio3" class="custom-control-input">
+                               <label class="custom-control-label" for="GoesSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GoesNever" name="customRadio3" class="custom-control-input">
+                               <label class="custom-control-label" for="GoesNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>4. Shows Initiative and is innovative</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="ShowConsistent" name="customRadio4" class="custom-control-input">
+                               <label class="custom-control-label" for="ShowConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="ShowMost" name="customRadio4" class="custom-control-input">
+                               <label class="custom-control-label" for="ShowMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="ShowSome" name="customRadio4" class="custom-control-input">
+                               <label class="custom-control-label" for="ShowSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="ShowSeldom" name="customRadio4" class="custom-control-input">
+                               <label class="custom-control-label" for="ShowSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="ShowNever" name="customRadio4" class="custom-control-input">
+                               <label class="custom-control-label" for="ShowNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>5. Breaks Barriers</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="BreakConsistent" name="customRadio5"
+                                 class="custom-control-input">
+                               <label class="custom-control-label" for="BreakConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="BreakMost" name="customRadio5" class="custom-control-input">
+                               <label class="custom-control-label" for="BreakMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="BreakSome" name="customRadio5" class="custom-control-input">
+                               <label class="custom-control-label" for="BreakSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="BreakSeldom" name="customRadio5" class="custom-control-input">
+                               <label class="custom-control-label" for="BreakSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="BreakNever" name="customRadio5" class="custom-control-input">
+                               <label class="custom-control-label" for="BreakNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>6. Breaks Barriers</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSome" name="customRadio" class="custom-control-input" checked>
+                               <label class="custom-control-label" for="GenSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenNever" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>7. Is Responsive and Passionate</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                 checked>
+                               <label class="custom-control-label" for="GenConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSome" name="customRadio" class="custom-control-input" checked>
+                               <label class="custom-control-label" for="GenSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenNever" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>8. Surpases Customer's Expectation Always</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                 checked>
+                               <label class="custom-control-label" for="GenConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSome" name="customRadio" class="custom-control-input" checked>
+                               <label class="custom-control-label" for="GenSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenNever" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="bd-b pd-y-10">
+                           <h5>9. Is meticulous and maintains quality standards</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                 checked>
+                               <label class="custom-control-label" for="GenConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSome" name="customRadio" class="custom-control-input" checked>
+                               <label class="custom-control-label" for="GenSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenNever" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                         <div class="pd-y-10">
+                           <h5>10. Is professional -Exhibit integrity, is friendly and genuine</h5>
+                           <div class="d-flex justify-content-between custom-row">
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenConsistent" name="customRadio" class="custom-control-input"
+                                 checked>
+                               <label class="custom-control-label" for="GenConsistent">Consistently</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenMost" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenMost">Mostly</label>
+                             </div>
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSome" name="customRadio" class="custom-control-input" checked>
+                               <label class="custom-control-label" for="GenSome">Sometimes</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenSeldom" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenSeldom">Seldom</label>
+                             </div>
+
+                             <div class="custom-control custom-radio item">
+                               <input type="radio" id="GenNever" name="customRadio" class="custom-control-input">
+                               <label class="custom-control-label" for="GenNever">Never</label>
+                             </div>
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+                     <div class="modal-footer">
+                       <button type="button" class="btn btn-cancel" data-dismiss="modal">Cancel</button>
+                       <button type="button" class="btn btn-primary pd-x-40">Submit</button>
+                     </div>
+                   </div>
+                 </div>
+               </div>
 
               <div class="tab-pane fade" id="list-tasks" role="tabpanel" aria-labelledby="list-tasks-list">
                 <h1 class="perform-head">Tasks</h1>
