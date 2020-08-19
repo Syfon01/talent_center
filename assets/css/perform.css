@@ -366,3 +366,16 @@ font-weight: 600;
 .bg-card-header{
   background-color: #EEEEEE;
 }
+.bg-greenish{
+  background-color: #EFF6ED;
+  border-top: 3px solid #50B83C;
+}
+.btn-assess{
+  border: 1px solid #212B3666;
+}
+.check-iconn {
+  background-color: #fff;
+  border: 2px solid #108043;
+  color: #108043;
+  box-shadow:2px 2px 4px 2px #BBE5B3;
+}
