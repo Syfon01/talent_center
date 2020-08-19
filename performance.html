@@ -748,73 +748,201 @@
                 360 assessment
               ============================================= -->
               <div class="tab-pane fade" id="list-thirty" role="tabpanel" aria-labelledby="list-thirty-list">
-                <h1 class="perform-head">360 Assesment</h1>
-                <div class="col-lg-10 col-xl-7 col-12 pd-0">
-                  <p>This is a 360 degree feedback review designed to gather feedback about you and <b>anonymous feedback</b>
-                    about your peers, supervisors and direct reports (if you have).</p>
-                </div>
                 <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-12 mb-3">
-                    <div class="card">
-                      <div class="card-body card-360">
-                        <h5>Self & Peers appraisal</h5>
-                        <p class="text-muted">Submit a comprehensive feedback of yourself and your peers</p>
-                        <div class="">
-                          <label for="" class="text-muted mb-0 text-uppercase tx-bold tx-12">ongoing</label>
-                          <div class="progress">
-                            <div class="progress-bar wd-80p" role="progressbar" aria-valuenow="25" aria-valuemin="0"
-                              aria-valuemax="100"></div>
+                  <div class="col-lg-8 col-md-8 col-xl-7 col-12">
+                <h1 class="perform-head">360 Assesment</h1>
+
+                    <p>This is a 360 degree feedback review designed to gather feedback about you and <b>anonymous feedback</b>
+                      about your peers, supervisors and direct reports (if you have).</p>
+                  </div>
+                  <div class="col-xl-1 d-lg-none d-md-none"></div>
+                  <div class="col-lg-4 col-md-4 col-xl-4 col-12">
+                    <div class="card p-3 bg-bluish shadow-sm bd-0">
+                      <div class="row">
+                        <div class="col-md-7 py-3">
+                          <p class="tx-bold percent-font">Your percentage completion is</p>
+                        </div>
+                        <div class="col-md-5">
+                          <div class="progresss mx-auto" data-value='64'>
+                            <span class="progress-left">
+                              <span class="progress-bar border-primary"></span>
+                            </span>
+                            <span class="progress-right">
+                              <span class="progress-bar border-primary"></span>
+                            </span>
+                            <div
+                              class="progress-value w-100 h-100 rounded-circle d-flex align-items-center justify-content-center">
+                              <div class="h2 font-weight-bold">64<sup class="small">%</sup></div>
+                            </div>
                           </div>
+
                         </div>
                       </div>
-                      <a href="" class="footer-link">
-                      <div class="card-footer">
-                        Continue
-                      </div>
-                      </a>
                     </div>
                   </div>
+                </div>
 
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-12 mb-3">
-                    <div class="card">
-                      <div class="card-body card-360">
-                        <h5>Direct report appraisal</h5>
-                        <p class="text-muted">Give an assessment of your direct report here.</p>
-                        <div class="">
-                          <label for="" class="text-muted mb-0 text-uppercase tx-bold tx-12">completed</label>
-                          <div class="progress">
-                            <div class="progress-bar wd-100p bg-success" role="progressbar" aria-valuenow="25" aria-valuemin="0"
-                              aria-valuemax="100"></div>
+                <ul class="nav nav-line" id="myTab" role="tablist">
+                  <li class="nav-item">
+                    <a class="nav-link appraisal-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                      aria-controls="home" aria-selected="true">Self & Peers Appraisal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link appraisal-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                      aria-controls="profile" aria-selected="false">Direct Report Appraisal</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link appraisal-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                      aria-controls="contact" aria-selected="false">Supervisor Appraisal</a>
+                  </li>
+                </ul>
+                <div class="tab-content bd bd-gray-300 bd-0 pd-y-20" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                        <div class="card">
+                          <div class="card-body card-360">
+                            <div class="row">
+                              <div class="col-xl-3 col-lg-2 col-3">
+                                <img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid">
+                              </div>
+                              <div class="col-xl-9 pd-x-0">
+                                <p class="tx-bold mg-b-0">Chukwuemeka Uzodinma O.</p>
+                                <p class="text-muted tx-11 mg-y-0">Product Vision and Development Specia...</p>
+                              </div>
+                            </div>
                           </div>
+                          <a href="" class="footer-appriasal tx-center" data-toggle="modal"
+                            data-target="#selfAppraisal">
+                            <div class="card-footer">
+                              Start Self Appraisal
+                            </div>
+                          </a>
                         </div>
                       </div>
-                      <a href="" class="footer-link">
-                        <div class="card-footer">
-                          View
+
+                      <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                        <div class="card">
+                          <div class="card-body card-360">
+                            <div class="d-flex justify-content-between">
+                              <div>
+                                <img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                              </div>
+                              <div>
+                                <p class="tx-bold mg-b-0">Adamu Duru</p>
+                                <p class="text-muted tx-11 mg-y-0">Product Management Cycle Expert</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="" class="footer-appriasal-complete tx-center text-muted" disabled>
+                            <div class="card-footer">
+                              <span class="">
+                                <i data-feather="check" class="check-icon rounded-circle tx-white"></i>
+                              </span> Self Appraisal Complete
+                            </div>
+                          </a>
                         </div>
-                      </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                        <div class="card">
+                          <div class="card-body card-360">
+                            <div class="d-flex justify-content-between">
+                              <div>
+                                <img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                              </div>
+                              <div>
+                                <p class="tx-bold mg-b-0">Ngozi Aliyu</p>
+                                <p class="text-muted tx-11 mg-y-0">Product Manager</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="" class="footer-appriasal tx-center" data-toggle="modal"
+                            data-target="#selfAppraisal">
+                            <div class="card-footer">
+                              Start Peer Appraisal
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
                     </div>
                   </div>
-
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-12 mb-3">
-                    <div class="card">
-                      <div class="card-body card-360">
-                        <h5>Supervisor appraisal</h5>
-                        <p class="text-muted pd-b-20">Give feedbacks about your supervisor</p>
-                        <div class="">
-                          <label for="" class="text-muted mb-0 text-uppercase tx-bold tx-12">Not started</label>
-                          <div class="progress">
-                            <div class="progress-bar wd-0p bg-gray-1" role="progressbar" aria-valuenow="25" aria-valuemin="0"
-                              aria-valuemax="100"></div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                        <div class="card">
+                          <div class="card-body card-360">
+                            <div class="d-flex justify-content-between">
+                              <div>
+                                <img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                              </div>
+                              <div>
+                                <p class="tx-bold mg-b-0">Chukwuemeka Uzodinma O.</p>
+                                <p class="text-muted tx-11 mg-y-0">Product Vision and Development Specia...</p>
+                              </div>
+                            </div>
                           </div>
+                          <a href="" class="footer-appriasal tx-center" data-toggle="modal"
+                            data-target="#directAppraisal">
+                            <div class="card-footer">
+                              Start Direct Report Appraisal
+                            </div>
+                          </a>
                         </div>
                       </div>
-                      <a href="" class="footer-link">
-                        <div class="card-footer">
-                          Get Started
+
+                      <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                        <div class="card">
+                          <div class="card-body card-360">
+                            <div class="d-flex justify-content-between">
+                              <div>
+                                <img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                              </div>
+                              <div>
+                                <p class="tx-bold mg-b-0">Chukwuemeka Uzodinma O.</p>
+                                <p class="text-muted tx-11 mg-y-0">Product Vision and Development Specia...</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="" class="footer-appriasal-complete tx-center text-muted" disabled>
+                            <div class="card-footer">
+                              <span class="">
+                                <i data-feather="check" class="check-icon rounded-circle tx-white"></i>
+                              </span>
+                              Direct Report Appraisal Complete
+                            </div>
+                          </a>
                         </div>
-                      </a>
+                      </div>
+
+                      <div class="col-lg-4 col-md-6 col-xl-4 col-12 mb-3">
+                        <div class="card">
+                          <div class="card-body card-360">
+                            <div class="d-flex justify-content-between">
+                              <div>
+                                <img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid mr-1">
+                              </div>
+                              <div>
+                                <p class="tx-bold mg-b-0">Chukwuemeka Uzodinma O.</p>
+                                <p class="text-muted tx-11 mg-y-0">Product Vision and Development Specia...</p>
+                              </div>
+                            </div>
+                          </div>
+                          <a href="" class="footer-appriasal tx-center" data-toggle="modal"
+                            data-target="#directAppraisal">
+                            <div class="card-footer">
+                              Start Direct Report Appraisal
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+
                     </div>
+                  </div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    <h6>Contact</h6>
+                    <p>...</p>
                   </div>
                 </div>
 
@@ -1643,6 +1771,7 @@
 
   <script src="./assets/js/dashforge.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+  <script src="./assets/js/progress.js"></script>
   <script>
   var ctx = document.getElementById('myChart').getContext('2d');
   var chart = new Chart(ctx, {
