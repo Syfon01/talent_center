@@ -138,10 +138,10 @@
                    href="#list-thirty" role="tab" aria-controls="thirty">360 Assessment</a>
               <a class="list-group-item list-group-item-action" id="list-assessment-list" data-toggle="list"
                 href="#list-assessment" role="tab" aria-controls="messages">KPI Assessment</a>
-              <a class="list-group-item list-group-item-action" id="list-tasks-list" data-toggle="list"
+              <!-- <a class="list-group-item list-group-item-action" id="list-tasks-list" data-toggle="list"
                 href="#list-tasks" role="tab" aria-controls="tasks">Tasks</a>
               <a class="list-group-item list-group-item-action" id="list-pips-list" data-toggle="list"
-                href="#list-pips" role="tab" aria-controls="pips">PIPS</a>
+                href="#list-pips" role="tab" aria-controls="pips">PIPS</a> -->
             </div>
 
             <div class="fb pd-y-20">
@@ -222,13 +222,13 @@
                 <ul class="nav  nav-line " id="myTab" role="tablist">
                   <li class="nav-item">
                     <a class="nav-link custom-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab"
-                      aria-controls="personal" aria-selected="true">Your KPI <span class="tx-13 pd-l-5">(7)</span></a>
+                      aria-controls="personal" aria-selected="true">Your KPI </a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link custom-link" id="direct-tab" data-toggle="tab" href="#direct" role="tab"
-                      aria-controls="direct" aria-selected="false">Direct report's KPI <span class="tx-13 pd-l-5">(25)</span></a>
+                      aria-controls="direct" aria-selected="false">Your Scores  </a>
                   </li>
-                  <li class="nav-item">
+                  <!-- <li class="nav-item">
                     <a class="nav-link custom-link" id="manager-tab" data-toggle="tab" href="#manager" role="tab"
                       aria-controls="manager" aria-selected="false">Manager's KPI <span
                         class="tx-13 pd-l-5">(9)</span></a>
@@ -237,7 +237,7 @@
                     <a class="nav-link custom-link" id="group-tab" data-toggle="tab" href="#group" role="tab"
                       aria-controls="group" aria-selected="false">Group's Report <span
                         class="tx-13 pd-l-5">(3)</span></a>
-                  </li>
+                  </li> -->
                 </ul>
                 <div class="tab-content bd bd-gray-300 bd-t-0 mg-y-40 border-0" id="myTabContent">
                   <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
@@ -277,236 +277,41 @@
                         </tbody>
                       </table>
                     </div>
-
-                    <!-- on view -->
-                    <p class="tx-danger">On view of kpi</p>
-                    <div>                    
-                      <div class="row mg-y-30">
-                        <div class="col row">
-                          <span class="mg-l-15 mg-r-10">
-                            <i data-feather="arrow-left-circle"></i>
-                          </span>
-                          <h6 class="mg-t-4"> Manager <span class="tx-13 pd-l-5">(5)</span> </h6>
-                        </div>
-                        
-                        <div class="col d-flex justify-content-end">
-                          <button class="btn mg-x-20 view-manager-btn">View manager's assessment</button>
-                        </div>
-                      </div>
-
-                      <div class="table-responsive">
-                        <table class="table table-hover table-striped">
-                          <thead>
-                            <tr>
-                              <th scope="col" class=" tx-13 ">S/N</th>
-                              <th scope="col" class=" tx-13 ">KPI name</th>
-                              <th scope="col" class=" tx-13 ">Definition/Decription</th>
-                              <th scope="col" class="tx-13 ">Perspective</th>
-                              <th scope="col" class="tx-13 ">Objective</th>
-                              <th scope="col" class=" tx-13">Weight (%)</th>
-                              <th scope="col" class=" tx-13">Measurement metric</th>
-
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="table-font">1</td>
-                              <td class="table-font">Profitability (PBT Ranking)</td>
-                              <td class="table-font">Achievement of country PBT target</td>
-                              <td class="table-font">Enterprise</td>
-                              <td class="table-font">Achieve Top 3 ranking in Profitability (PBT – 228bn) - Trade & Low
-                                Cost Dep</td>
-                              <td class="table-font">15</td>
-                              <td class="table-font">Actual vs Budget</td>
-                            </tr>
-                            <tr>
-                              <td class="table-font">2</td>
-                              <td class="table-font"> Customer Service Experience</td>
-                              <td class="table-font">Internal Customer Satisfaction target, benchmarked against KPMG
-                                rating</td>
-                              <td class="table-font">Enterprise</td>
-                              <td class="table-font">"Be one of the most preferred banks in customer services;</td>
-                              <td class="table-font">5</td>
-                              <td class="table-font">"Actual vs Target</td>
-                            </tr>
-                            <tr>
-                              <td class="table-font">3</td>
-                              <td class="table-font"> Bankwide Regulatory Compliance</td>
-                              <td class="table-font">Maintain a culture of zero tolerance for regulatory infractions and
-                                penalties</td>
-                              <td class="table-font">Enterprise</td>
-                              <td class="table-font">Internal – 90% Customer Satisfaction across all customer
-                                touchpoints/Channels; External - Top 3 (KPMG survey)"</td>
-                              <td class="table-font">20</td>
-                              <td class="table-font">(As per Internal Cus Satisfaction & KPMG survey Ratings)"</td>
-                            </tr>
-                            <tr>
-                              <td class="table-font">4</td>
-                              <td class="table-font"> Dept/Individual PBT Target</td>
-                              <td class="table-font">Drive achievement of country PBT target</td>
-                              <td class="table-font">Dept/Individual</td>
-                              <td class="table-font">"Build a reputation for compliance with all regulations and with
-                                zero tolerance for regulatory infractions and penalties.</td>
-                              <td class="table-font">5</td>
-                              <td class="table-font">"Actual vs Budget</td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-
-                    </div>
-
-                    <!-- end of view api -->
+                  
                   </div>
                 <div class="tab-pane fade" id="direct" role="tabpanel" aria-labelledby="direct-tab">
-                  <div class="table-responsive">
-                    <table class="table table-hover table-striped">
-                      <thead>
-                        <tr>
-                          <th scope="col" class=" tx-13 ">S/N</th>
-                          <th scope="col" class=" tx-13 ">Name</th>
-                          <th scope="col" class=" tx-13 ">Number of KPIs</th>
-                          <th scope="col" class="tx-13 ">Date Created</th>
-                          <th scope="col" class="tx-13 ">Date Modified</th>
-                          <th scope="col" class=" tx-13"></th>
-
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td class="table-font">1</td>
-                          <td class="table-font"><img src="./assets/img/pro-1.png" alt="profile-image" srcset="" class="img-fluid pd-r-5"> Sam
-                            Davids</td>
-                          <td class="table-font">4</td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">30 Jan, 2023</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-40" href="">View KPI</a></td>
-                        </tr>
-                        <tr>
-                          <td class="table-font">2</td>
-                          <td class="table-font"><img src="./assets/img/pro-2.png" alt="profile-image" srcset=""
-                              class="img-fluid pd-r-5"> Sam
-                            Davids</td>
-                          <td class="table-font">5</td>
-                          <td class="table-font">30 Dec, 2020</td>
-                          <td class="table-font">20 Feb, 2021</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-40" href="">View KPI</a></td>
-                        </tr>
-                        <tr>
-                          <td class="table-font">3</td>
-                          <td class="table-font"><img src="./assets/img/pro-1.png" alt="profile-image" srcset=""
-                              class="img-fluid pd-r-5"> Sam
-                            Davids</td>
-                          <td class="table-font">7</td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-40" href="">View KPI</a></td>
-                        </tr>
-                        <tr>
-                          <td class="table-font">4</td>
-                          <td class="table-font"><img src="./assets/img/pro-1.png" alt="profile-image" srcset=""
-                              class="img-fluid pd-r-5"> Sam
-                            Davids</td>
-                          <td class="table-font">4</td>
-                          <td class="table-font">30 Dec, 2021</td>
-                          <td class="table-font">30 Jan, 2023</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-40" href="">View KPI</a></td>
-                        </tr>
-                        <tr>
-                          <td class="table-font">5</td>
-                          <td class="table-font"><img src="./assets/img/pro-2.png" alt="profile-image" srcset="" class="img-fluid pd-r-5"> Sam
-                            Davids</td>
-                          <td class="table-font">5</td>
-                          <td class="table-font">30 Dec, 2020</td>
-                          <td class="table-font">20 Feb, 2021</td>
-                          <td class="table-font"><a class="btn btn-view pd-x-40" href="">View KPI</a></td>
-                        </tr>
-                      </tbody>
-                    </table>
+                  <p class="tx-18">Your 2020 Scores</p>
+                  <div class="bg-white">
+                    <div class="row">
+                      <div class="col-md-2 d-md-block d-lg-block d-sm-none d-none bg-gra pd-y-25 pd-x-0">
+                        <img src="assets/img/Orion.svg" class="img-center"/>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <div class="row">
+                          <div class="col-6 pd-y-25 pd-lg-x-50 pd-x-30">
+                            <p class="tx-14 tx-bold mb-0 tx-bla">H1 Score</p>
+                            <p class="tx-12 mb-2 tx-gra">JAN - JUN</p>
+                            <p class="tx-30 tx-light mb-0">68.57%</p>
+                          </div>
+                          <div class="col-6 pd-y-25 pd-lg-x-50 pd-x-30">
+                            <p class="tx-14 tx-bold mb-0 tx-bla">H2 Score</p>
+                            <p class="tx-12 mb-2 tx-gra">JUL - DEC</p>
+                            <p class="tx-30 tx-light mb-0">72.34%</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                      <div class="col-md-4 col-12 pd-y-25 pd-lg-x-50 pd-x-30 bd-l">
+                        <p class="tx-14 tx-bold mb-0 tx-bla">Ranking</p>
+                        <p class="tx-12 mb-2 tx-gra">Above Average</p>
+                        <p class="tx-30 tx-light mb-0">71.87%</p>
+                      </div>
+                    </div>
                   </div>
-
-                   <!-- on view -->
-                   <p class="tx-danger">On view of kpi</p>
-                   <div>
-                     <div class="row mg-y-30">
-                       <div class="col row">
-                         <span class="mg-l-15 mg-r-10">
-                           <i data-feather="arrow-left-circle"></i>
-                         </span>
-                         <h5><img src="./assets/img/pro-1.png" alt="profile-image" 
-                             class="img-fluid"> Sam Davids <span class="tx-13 pd-l-5">(5)</span> </h5>
-                       </div>
-
-                       <div class="col d-flex justify-content-end">
-                         <button class="btn mg-x-20 view-manager-btn">View manager's assessment</button>
-                       </div>
-                     </div>
-
-                     <div class="table-responsive">
-                       <table class="table table-hover table-striped">
-                         <thead>
-                           <tr>
-                             <th scope="col" class=" tx-13 ">S/N</th>
-                             <th scope="col" class=" tx-13 ">KPI name</th>
-                             <th scope="col" class=" tx-13 ">Definition/Decription</th>
-                             <th scope="col" class="tx-13 ">Perspective</th>
-                             <th scope="col" class="tx-13 ">Objective</th>
-                             <th scope="col" class=" tx-13">Weight (%)</th>
-                             <th scope="col" class=" tx-13">Measurement metric</th>
-
-                           </tr>
-                         </thead>
-                         <tbody>
-                           <tr>
-                             <td class="table-font">1</td>
-                             <td class="table-font">Profitability (PBT Ranking)</td>
-                             <td class="table-font">Achievement of country PBT target</td>
-                             <td class="table-font">Enterprise</td>
-                             <td class="table-font">Achieve Top 3 ranking in Profitability (PBT – 228bn) - Trade & Low
-                               Cost Dep</td>
-                             <td class="table-font">15</td>
-                             <td class="table-font">Actual vs Budget</td>
-                           </tr>
-                           <tr>
-                             <td class="table-font">2</td>
-                             <td class="table-font"> Customer Service Experience</td>
-                             <td class="table-font">Internal Customer Satisfaction target, benchmarked against KPMG
-                               rating</td>
-                             <td class="table-font">Enterprise</td>
-                             <td class="table-font">"Be one of the most preferred banks in customer services;</td>
-                             <td class="table-font">5</td>
-                             <td class="table-font">"Actual vs Target</td>
-                           </tr>
-                           <tr>
-                             <td class="table-font">3</td>
-                             <td class="table-font"> Bankwide Regulatory Compliance</td>
-                             <td class="table-font">Maintain a culture of zero tolerance for regulatory infractions and
-                               penalties</td>
-                             <td class="table-font">Enterprise</td>
-                             <td class="table-font">Internal – 90% Customer Satisfaction across all customer
-                               touchpoints/Channels; External - Top 3 (KPMG survey)"</td>
-                             <td class="table-font">20</td>
-                             <td class="table-font">(As per Internal Cus Satisfaction & KPMG survey Ratings)"</td>
-                           </tr>
-                           <tr>
-                             <td class="table-font">4</td>
-                             <td class="table-font"> Dept/Individual PBT Target</td>
-                             <td class="table-font">Drive achievement of country PBT target</td>
-                             <td class="table-font">Dept/Individual</td>
-                             <td class="table-font">"Build a reputation for compliance with all regulations and with
-                               zero tolerance for regulatory infractions and penalties.</td>
-                             <td class="table-font">5</td>
-                             <td class="table-font">"Actual vs Budget</td>
-                           </tr>
-                         </tbody>
-                       </table>
-                     </div>
-
-                   </div>
-
-                   <!-- end of view api -->
-
+                  
                 </div>
+               
+               
                 <div class="tab-pane fade" id="manager" role="tabpanel" aria-labelledby="manager-tab">
                   <div class="table-responsive">
                     <table class="table table-hover table-striped">

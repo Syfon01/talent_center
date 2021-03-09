@@ -379,3 +379,18 @@ font-weight: 600;
   color: #108043;
   box-shadow:2px 2px 4px 2px #BBE5B3;
 }
+.tx-bla{
+  color: 51,51,51,1;
+}
+.tx-gra{
+  color: 158,158,158,1;
+}
+.bg-gra{
+  background: rgba(245,245,245,1)!important;
+}
+.img-center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%; 
+}
